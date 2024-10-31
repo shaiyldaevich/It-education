@@ -1,0 +1,178 @@
+.Footer {
+    padding: 50px 0;
+    background: transparent;
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        width: 100%;
+        justify-content: space-between;
+
+        .address {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: flex-start;
+            justify-content: flex-start;
+            .addressTitle {
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 24.38px;
+                text-align: center;
+            }
+            .addresses {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 10px;
+                .info {
+                    cursor: pointer;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+                    align-items: center;
+                    justify-content: flex-start;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19.5px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .contacts {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            justify-content: flex-start;
+            .contactsTitle {
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 24.38px;
+                text-align: center;
+            }
+            .contactsInfo {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+                .info {
+                    cursor: pointer;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+                    align-items: center;
+                    justify-content: flex-start;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19.5px;
+                    text-align: center;
+                }
+            }
+        }
+        .socialMedia {
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            .socialMediaTitle {
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 24.38px;
+                text-align: center;
+            }
+            .socialMediaLinks {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                align-items: center;
+                gap: 15px;
+
+                .socialMediaLink {
+                    width: 35px;
+                    height: 35px;
+                    transition: transform 0.3s ease;
+
+                    &:hover {
+                        transform: translateY(-2px);
+                    }
+                }
+            }
+        }
+        .navsBlock {
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            .navsTitle {
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 24.38px;
+                text-align: center;
+            }
+
+            .navs {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+                justify-content: center;
+
+                .nav {
+                    font-size: 15px;
+                    font-weight: 500;
+                    line-height: 18.29px;
+                    text-align: left;
+                    transition: transform 0.3s ease;
+
+                    &:hover {
+                        transform: translateX(3px);
+                    }
+                }
+            }
+        }
+        .logoBlock {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 40px;
+
+            .translateButtons {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+
+                .buttonKG {
+                    cursor: pointer;
+                    padding: 5px;
+                    background: transparent;
+                    border: 2px solid white;
+                    border-radius: 5px 0 0 5px;
+                    transition: 300ms;
+                    &:hover {
+                        padding: 6px;
+                    }
+                }
+                .buttonRU {
+                    cursor: pointer;
+                    padding: 5px;
+                    background: transparent;
+                    border: 2px solid white;
+                    border-radius: 0 5px 5px 0;
+                    transition: 300ms;
+                    &:hover {
+                        padding: 6px;
+                    }
+                }
+            }
+        }
+    }
+}
