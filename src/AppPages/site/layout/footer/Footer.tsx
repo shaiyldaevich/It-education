@@ -18,7 +18,7 @@ import { useLanguageStore } from "@/stores/useLanguageStore";
 const Footer = () => {
     const { t, setLanguage, language } = useLanguageStore();
 
-    const handleLanguageChange = (selectedLanguage: "ky" | "ru") => {
+    const handleLanguageChange = (selectedLanguage: "ru" | "ky") => {
         setLanguage(selectedLanguage);
     };
 
@@ -30,14 +30,6 @@ const Footer = () => {
                         <Image src={logo} alt="logo" />
                         <div className={scss.translateButtons}>
                             <button
-                                onClick={() => handleLanguageChange("ky")}
-                                className={`${scss.buttonKG} ${
-                                    language === "ky" ? scss.active : ""
-                                }`}
-                            >
-                                KG
-                            </button>
-                            <button
                                 onClick={() => handleLanguageChange("ru")}
                                 className={`${scss.buttonRU} ${
                                     language === "ru" ? scss.active : ""
@@ -45,27 +37,35 @@ const Footer = () => {
                             >
                                 RU
                             </button>
+                            <button
+                                onClick={() => handleLanguageChange("ky")}
+                                className={`${scss.buttonKG} ${
+                                    language === "ky" ? scss.active : ""
+                                }`}
+                            >
+                                KG
+                            </button>
                         </div>
                     </div>
                     <div className={scss.navsBlock}>
                         <h1 className={scss.navsTitle}>
-                            {t("Быстрые ссылки", "Тез байланыштар")}
+                            {t("Тез байланыштар", "Быстрые ссылки")}
                         </h1>
                         <div className={scss.navs}>
                             <Link href={"#"} className={scss.nav}>
-                                {t("О школе", "Мектеп жөнүндө")}
+                                {t("Мектеп жөнүндө", "О школе")}
                             </Link>
                             <Link href={"#"} className={scss.nav}>
-                                {t("Наши курсы", "Биздин курстар")}
+                                {t("Биздин курстар", "Наши курсы")}
                             </Link>
                             <Link href={"#"} className={scss.nav}>
-                                {t("О нас", "Биз жөнүндө")}
+                                {t("Биз жөнүндө", "О нас")}
                             </Link>
                         </div>
                     </div>
                     <div className={scss.socialMedia}>
                         <h1 className={scss.socialMediaTitle}>
-                            {t("Социальные сети", "Социалдык тармактар")}
+                            {t("Социалдык тармактар", "Социальные сети")}
                         </h1>
                         <div className={scss.socialMediaLinks}>
                             <Link className={scss.socialMediaLink} href={"#"}>
@@ -114,7 +114,7 @@ const Footer = () => {
                     </div>
                     <div className={scss.contacts}>
                         <h1 className={scss.contactsTitle}>
-                            {t("Контакты", "Байланыштар")}
+                            {t("Байланыштар", "Контакты")}
                         </h1>
                         <div className={scss.contactsInfo}>
                             <h1 className={scss.info}>
@@ -137,7 +137,7 @@ const Footer = () => {
                     </div>
                     <div className={scss.address}>
                         <h1 className={scss.addressTitle}>
-                            {t("Адреса", "Даректер")}
+                            {t("Даректер", "Адреса")}
                         </h1>
                         <div className={scss.addresses}>
                             <h1 className={scss.info}>

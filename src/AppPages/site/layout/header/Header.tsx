@@ -23,22 +23,22 @@ const Header = () => {
                         </Link>
                         <div className={scss.navs}>
                             <Link href={"#"} className={scss.nav}>
-                                {t("О школе", "Мектеп жөнүндө")}
+                                {t("Мектеп жөнүндө", "О школе")}
                             </Link>
                             <Link href={"#"} className={scss.nav}>
-                                {t("Наши курсы", "Биздин курстар")}
+                                {t("Биздин курстар", "Наши курсы")}
                             </Link>
                             <Link href={"#"} className={scss.nav}>
-                                {t("О нас", "Биз жөнүндө")}
+                                {t("Биз жөнүндө", "О нас")}
                             </Link>
                         </div>
                     </div>
                     <div className={scss.auth}>
                         <button className={scss.signUp}>
-                            {t("Войти", "Кирүү")}
+                            {t("Кирүү", "Войти")}
                         </button>
                         <button className={scss.follow}>
-                            {t("Подписаться", "Жазылуу")}
+                            {t("Жазылуу", "Подписаться")}
                         </button>
                     </div>
                 </div>

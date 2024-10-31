@@ -1,17 +1,15 @@
 import { create } from "zustand";
 
 interface LanguageStore {
-    language: "ky" | "ru";
-    setLanguage: (language: "ky" | "ru") => void;
+    language: "ru" | "ky";
+    setLanguage: (language: "ru" | "ky") => void;
     t: (ky: string, ru: string) => string;
 }
 
 export const useLanguageStore = create<LanguageStore>((set, get) => ({
     language: "ru",
-    setLanguage: (language: "ky" | "ru") => set({ language }),
+    setLanguage: (language: "ru" | "ky") => set({ language }),
     t: (ky: string, ru: string) => {
-        const currentLanguage = get().language;
-        if (currentLanguage === "ky") return ky;
-        return ru;
+        return get().language === "ru" ? ru : ky;
     },
 }));
