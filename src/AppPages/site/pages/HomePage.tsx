@@ -3,7 +3,8 @@ import LastState from "./homeSections/LastState/LastState";
 const HomePage = () => {
   return (
     <>
-    <LastState/>
+      HomePage
+      <LastState />
     </>
   );
 };
