@@ -1,9 +1,9 @@
-import Welcome from "./homeSections/Welcome";
+import LastState from "./homeSections/LastState/LastState";
 
 const HomePage = () => {
   return (
     <>
-      <Welcome />
+    <LastState/>
     </>
   );
 };
