@@ -22,6 +22,17 @@ const Footer = () => {
         setLanguage(selectedLanguage);
     };
 
+    const copyToClipboard = (text: string) => {
+        navigator.clipboard
+            .writeText(text)
+            .then(() => {
+                alert("Текст скопирован в буфер обмена!"); // Уведомление о копировании
+            })
+            .catch((err) => {
+                console.error("Ошибка при копировании: ", err);
+            });
+    };
+
     return (
         <footer className={scss.Footer}>
             <div className="container">
@@ -68,42 +79,47 @@ const Footer = () => {
                             {t("Социалдык тармактар", "Социальные сети")}
                         </h1>
                         <div className={scss.socialMediaLinks}>
-                            <Link className={scss.socialMediaLink} href={"#"}>
+                            <Link
+                                className={scss.socialMediaLink}
+                                href={"https://www.tiktok.com/en/"}
+                            >
                                 <Image
                                     className={scss.socialMediaLink}
                                     src={tiktok}
                                     alt="tt"
                                 />
                             </Link>
-                            <Link href={"#"}>
+                            <Link href={"https://web.telegram.org/"}>
                                 <Image
                                     className={scss.socialMediaLink}
                                     src={telegram}
                                     alt="tg"
                                 />
                             </Link>
-                            <Link href={"#"}>
+                            <Link href={"https://x.com/?lang=ru"}>
                                 <Image
                                     className={scss.socialMediaLink}
                                     src={twitter}
                                     alt="twter"
                                 />
                             </Link>
-                            <Link href={"#"}>
+                            <Link
+                                href={"https://www.facebook.com/?locale=ru_R"}
+                            >
                                 <Image
                                     className={scss.socialMediaLink}
                                     src={facebook}
                                     alt="fbook"
                                 />
                             </Link>
-                            <Link href={"#"}>
+                            <Link href={"https://www.youtube.com/"}>
                                 <Image
                                     className={scss.socialMediaLink}
                                     src={youtube}
                                     alt="ytube"
                                 />
                             </Link>
-                            <Link href={"#"}>
+                            <Link href={"https://www.instagram.com/"}>
                                 <Image
                                     className={scss.socialMediaLink}
                                     src={instagram}
@@ -117,7 +133,12 @@ const Footer = () => {
                             {t("Байланыштар", "Контакты")}
                         </h1>
                         <div className={scss.contactsInfo}>
-                            <h1 className={scss.info}>
+                            <h1
+                                className={scss.info}
+                                onClick={() =>
+                                    copyToClipboard("@motionwebteam@gmail.com")
+                                }
+                            >
                                 <Image
                                     className={scss.socialMediaLink}
                                     src={gmail}
@@ -125,7 +146,12 @@ const Footer = () => {
                                 />
                                 @motionwebteam@gmail.com
                             </h1>
-                            <h1 className={scss.info}>
+                            <h1
+                                className={scss.info}
+                                onClick={() =>
+                                    copyToClipboard("+996 559 - 69 - 26 - 26")
+                                }
+                            >
                                 <Image
                                     className={scss.socialMediaLink}
                                     src={contacts}
@@ -140,7 +166,12 @@ const Footer = () => {
                             {t("Даректер", "Адреса")}
                         </h1>
                         <div className={scss.addresses}>
-                            <h1 className={scss.info}>
+                            <h1
+                                className={scss.info}
+                                onClick={() =>
+                                    copyToClipboard("Турусбекова 109 / 3")
+                                }
+                            >
                                 <Image
                                     className={scss.socialMediaLink}
                                     src={mapPin}
@@ -148,7 +179,14 @@ const Footer = () => {
                                 />
                                 Турусбекова 109 / 3
                             </h1>
-                            <h1 className={scss.info}>
+                            <h1
+                                className={scss.info}
+                                onClick={() =>
+                                    copyToClipboard(
+                                        "Идентификационный код: 1234567890"
+                                    )
+                                }
+                            >
                                 Идентификационный код: 1234567890
                             </h1>
                         </div>
