@@ -51,7 +51,7 @@ const Last = [
   },
 ];
 
-const LastStates = () => {
+const LastStatesMore = () => {
   const nav = useRouter();
   const { t } = useLanguageStore();
 
@@ -86,15 +86,10 @@ const LastStates = () => {
               </div>
             ))}
           </div>
-          <div className={scss.Next}>
-            <button onClick={() => nav.push("/article")}>
-              {t("Көбүрөөк көрсөтүү", "Показать больше")}
-            </button>
-          </div>
         </div>
       </div>
     </section>
   );
 };
 
-export default LastStates;
+export default LastStatesMore;
