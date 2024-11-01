@@ -2,7 +2,8 @@ import { create } from "zustand";
 
 interface HeaderStore {
     links: {
-        name: string;
+        nameKY: string;
+        nameRU: string;
         href: string;
     }[];
 
@@ -12,9 +13,13 @@ interface HeaderStore {
 
 export const useHeaderStore = create<HeaderStore>((set) => ({
     links: [
-        { name: "О школе", href: "/#" },
-        { name: "Наши курсы", href: ".#" },
-        { name: "О нас", href: "/#" },
+        {
+            nameKY: "Мектеп жөнүндө",
+            nameRU: "О школе",
+            href: "/#",
+        },
+        { nameKY: "Биздин курстар", nameRU: "Наши курсы", href: "#" },
+        { nameKY: "Биз жөнүндө", nameRU: "О нас", href: "/#" },
     ],
 
     isOpenBurgerMenu: false,
