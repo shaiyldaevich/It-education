@@ -1,6 +1,6 @@
 "use client";
 import scss from "./Last.module.scss";
-import LastImg from "../../../../../assets/Rectangle 2061 (2).svg";
+import LastImg from "../../../../../assets/Rectangle 2061 (2).svg"
 import Image from "next/image";
 import { CgNotes } from "react-icons/cg";
 import { useRouter } from "next/navigation";

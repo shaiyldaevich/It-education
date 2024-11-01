@@ -1,4 +1,4 @@
-import LastStatesMore from "@/AppPages/site/pages/homeSections/LastState/LastStateMore/LastState";
+import LastStatesMore from "@/AppPages/site/pages/homeSections/LastStateMore/LastState";
 import React from "react";
 
 const page = () => {
