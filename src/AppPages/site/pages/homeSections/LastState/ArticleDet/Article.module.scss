@@ -7,14 +7,14 @@
     flex-direction: column;
     gap: 50px;
     h1 {
-      font-size: 36px;
+      font-size: clamp(20px, 4vw, 36px);
       font-weight: 700;
       line-height: 44px;
       color: #fff;
     }
 
     p {
-      font-size: 20px;
+      font-size: clamp(10px, 4vw, 20px);
       line-height: 25px;
       font-weight: 500;
       color: #fff;
@@ -31,6 +31,11 @@
       justify-content: center;
       flex-direction: column;
       gap: 30px;
+      p {
+        font-size: clamp(10px, 4vw, 20px);
+        font-weight: 500;
+        color: #ffffff;
+      }
       ul {
         display: flex;
         align-items: start;
@@ -39,6 +44,8 @@
         gap: 20px;
         padding-left: 20px;
         li {
+          font-size: clamp(9px, 4vw, 18px);
+          font-weight: 500;
           color: #fff;
         }
       }
@@ -63,10 +70,17 @@
           margin-bottom: 80px;
         }
         .text_cont {
+          display: flex;
+          align-items: start;
+          justify-content: center;
+          flex-direction: column;
+          gap: 10px;
+          width: 500px;
           p {
-            font-size: 28px;
+            font-size: clamp(14px, 4vw, 28px);
             font-weight: 700;
             color: #000000;
+            line-height: 34px;
           }
 
           .text_cont_auth {
@@ -74,7 +88,7 @@
             gap: 10px;
             h4 {
               color: #8d8d8d;
-              font-size: 16px;
+              font-size: clamp(8px, 4vw, 16px);
               font-weight: 500;
             }
 
@@ -82,7 +96,7 @@
               background: none;
               color: #000000;
               border: none;
-              font-size: 16px;
+              font-size: clamp(8px, 4vw, 16px);
               font-weight: 500;
             }
           }
@@ -99,7 +113,7 @@
           border-radius: 5px;
           cursor: pointer;
           font-weight: 600;
-          font-size: 16px;
+          font-size: clamp(8px, 4vw, 16px);
         }
       }
     }
@@ -124,8 +138,14 @@
           margin-bottom: 40px;
         }
         .text_auth {
+          display: flex;
+          align-items: start;
+          justify-content: center;
+          flex-direction: column;
+          gap: 10px;
+          width: 600px;
           h4 {
-            font-size: 28px;
+            font-size: clamp(14px, 4vw, 28px);
             font-weight: 700;
             color: #000000;
           }
@@ -133,14 +153,13 @@
           .text_auth_cont {
             p {
               color: #131313;
-              font-size: 16px;
+              font-size: clamp(8px, 4vw, 16px);
               font-weight: 500;
             }
           }
         }
       }
       .btn {
-        margin-bottom: 40px;
         button {
           background-color: #3498db;
           color: #ffffff;
@@ -149,17 +168,17 @@
           border-radius: 5px;
           cursor: pointer;
           font-weight: 600;
-          font-size: 16px;
+          font-size: clamp(8px, 4vw, 16px);
         }
       }
     }
 
     .others {
       h1 {
-        font-size: 36px;
+        font-size: clamp(20px, 4vw, 36px);
         font-weight: 700;
         color: #ffffff;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
       }
 
       .other_cards {

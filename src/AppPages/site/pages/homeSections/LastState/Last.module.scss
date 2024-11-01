@@ -26,6 +26,9 @@
         transition: transform 0.3s;
         color: #d1d3d8;
         border-radius: 26px;
+        @media (max-width: 370px) {
+          width: 100%;
+        }
         &:hover {
           transform: translateY(-5px);
         }
