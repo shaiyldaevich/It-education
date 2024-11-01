@@ -1,11 +1,10 @@
-import LastStates from "@/AppPages/site/pages/homeSections/LastState/LastState";
+import LastStatesMore from "@/AppPages/site/pages/homeSections/LastStateMore/LastState";
 import React from "react";
 
 const page = () => {
   return (
     <div>
-      article
-      {/* <LastStates /> */}
+      <LastStatesMore />
     </div>
   );
 };
