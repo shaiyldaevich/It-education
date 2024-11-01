@@ -67,7 +67,9 @@ const LastStates = () => {
                   <p>{item.description}</p>
                 </div>
                 <div className={scss.buttons}>
-                  <button>
+                  <button
+                    onClick={() => nav.push(`/article/${item.description.slice(0,20)}`)}
+                  >
                     <span>
                       <CgNotes />
                     </span>
