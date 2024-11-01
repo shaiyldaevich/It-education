@@ -83,6 +83,8 @@ const Articledet = () => {
               </li>
             </ul>
           </div>
+
+          {/* /////////////// */}
           <div className={scss.follow}>
             <div className={scss.left}>
               <Image src={followImg} alt="" />
@@ -90,7 +92,7 @@ const Articledet = () => {
                 <p>
                   {t(
                     "Толук версияны көрүү үчүн жазылыңыз",
-                    "Оформите подписку, чтобы посмотреть полную версию"
+                    "Оформите подписку, чтобы  посмотреть полную версию"
                   )}
                 </p>
                 <div className={scss.text_cont_auth}>
@@ -100,7 +102,7 @@ const Articledet = () => {
                       "Вы уже авторизованы?"
                     )}
                   </h4>
-                  <button>{t("Авторизациядан өтүңүз", "Авторизуйтесь")}</button>
+                  <a>{t("Авторизациядан өтүңүз", "Авторизуйтесь")}</a>
                 </div>
               </div>
             </div>
@@ -110,6 +112,8 @@ const Articledet = () => {
               </button>
             </div>
           </div>
+
+          {/* /////////////////// */}
           <h1>{t("Комментарийлер", "Комментарии")}</h1>
           <div className={scss.Auth}>
             <div className={scss.left}>
