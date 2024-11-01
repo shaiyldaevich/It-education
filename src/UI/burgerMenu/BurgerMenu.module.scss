@@ -1,140 +1,81 @@
-$spotify-green: #1db954;
-$spotify-black: #191414;
-$bg: #1b2026;
-$white-color: #ffffff;
-$black-color: $spotify-black;
-$lightest-slate: #d9dadc;
-$navy-shadow: rgba(255, 255, 255, 0.7);
-$black: $spotify-black;
-$border-radius: 5px;
-$transition: 0.3s ease;
-
 .BurgerMenu {
     position: absolute;
-    margin-top: 40px;
+    margin-top: 50px;
     opacity: 0;
     visibility: hidden;
-    transition: $transition;
-    padding: 15px;
-    background: $bg;
+    transition: 300ms;
+    padding: 5px;
+    margin-left: -20px;
+    background: #1b2026;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
-    border-radius: $border-radius;
+    border-radius: 5px;
     height: 100vh;
     width: 100vw;
+
     &.active {
         opacity: 1;
         visibility: visible;
     }
 
-    .content {
+    ul {
         display: flex;
+        padding: 20px 0 0 10px;
         align-items: start;
         justify-content: center;
         flex-direction: column;
-        gap: 15px;
 
-        .nav {
-            ul {
-                display: flex;
-                padding: 20px 0 0 10px;
-                align-items: start;
-                justify-content: center;
-                flex-direction: column;
-                li {
-                    list-style: none;
-                    .link {
-                        padding: 15px 14px;
-                        display: block;
-                        border-radius: $border-radius;
-                        color: #fff;
-                        transition: $transition;
-                        font-size: 20px;
-                        font-weight: 500;
-                        line-height: 22px;
-                        width: 100vw;
-                        &:hover {
-                            background-color: rgba(4, 63, 117, 1);
-                        }
-
-                        &.active {
-                            background-color: $black;
-                            color: $white-color;
-                        }
-                    }
-                }
-            }
-        }
-        .translate {
-            display: flex;
-            justify-content: flex-start;
-            gap: 12px;
-            padding: 7px 25px;
-
-            a {
-                color: #8a8a8a;
-                font-size: 20px;
-                font-weight: 400;
-                cursor: pointer;
-                transition: color 0.3s ease;
-
-                &:hover {
-                    color: #fff;
-                }
-
-                &.active {
-                    border-bottom: 1px solid #fff;
-                    color: #fff;
-                }
-            }
+        li {
+            list-style: none;
         }
     }
+}
+.link {
+    padding: 15px 14px;
+    display: block;
+    border-radius: 5px;
+    color: #fff;
+    transition: 300ms;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 22px;
+    width: 100vw;
 
-    @media (max-width: 900px) {
-        top: 60px;
-        right: 10px;
+    &:hover {
+        background-color: rgba(4, 63, 117, 1);
     }
 
-    @media (max-width: 768px) {
-        top: 55px;
-        right: 5px;
+    &.active {
+        background-color: black;
+        color: white;
+    }
+}
 
-        .content {
-            gap: 10px;
+.content {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.translate {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 7px 25px;
+    a {
+        color: #8a8a8a;
+        font-size: 20px;
+        font-weight: 400;
+        cursor: pointer;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: #fff;
         }
-    }
 
-    @media (max-width: 480px) {
-        top: 50px;
-        right: 0px;
-
-        .content {
-            gap: 8px;
-        }
-    }
-
-    @media (max-width: 400px) {
-        top: 50px;
-        right: 0px;
-
-        .content {
-            gap: 8px;
-        }
-    }
-
-    @media (max-width: 300px) {
-        .content {
-            gap: 5px;
-
-            .nav {
-                ul {
-                    li {
-                        .link {
-                            padding: 5px 10px;
-                            font-size: clamp(10px, 4vw, 6px);
-                        }
-                    }
-                }
-            }
+        &.active {
+            border-bottom: 1px solid #fff;
+            color: #fff;
         }
     }
 }

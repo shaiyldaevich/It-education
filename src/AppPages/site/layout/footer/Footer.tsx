@@ -119,7 +119,7 @@ const Footer = () => {
                         <div className={scss.contactsInfo}>
                             <h1 className={scss.info}>
                                 <Image
-                                    className={scss.gmailIcon}
+                                    className={scss.socialMediaLink}
                                     src={gmail}
                                     alt="gmail"
                                 />
@@ -127,7 +127,7 @@ const Footer = () => {
                             </h1>
                             <h1 className={scss.info}>
                                 <Image
-                                    className={scss.phoneIcon}
+                                    className={scss.socialMediaLink}
                                     src={contacts}
                                     alt="phone"
                                 />
@@ -141,7 +141,11 @@ const Footer = () => {
                         </h1>
                         <div className={scss.addresses}>
                             <h1 className={scss.info}>
-                                <Image src={mapPin} alt="mapPin" />
+                                <Image
+                                    className={scss.socialMediaLink}
+                                    src={mapPin}
+                                    alt="mapPin"
+                                />
                                 Турусбекова 109 / 3
                             </h1>
                             <h1 className={scss.info}>
