@@ -1,0 +1,81 @@
+.BurgerMenu {
+    position: absolute;
+    margin-top: 50px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 300ms;
+    padding: 5px;
+    margin-left: -20px;
+    background: #1b2026;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    height: 100vh;
+    width: 100vw;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    ul {
+        display: flex;
+        padding: 20px 0 0 10px;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+
+        li {
+            list-style: none;
+        }
+    }
+}
+.link {
+    padding: 15px 14px;
+    display: block;
+    border-radius: 5px;
+    color: #fff;
+    transition: 300ms;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 22px;
+    width: 100vw;
+
+    &:hover {
+        background-color: rgba(4, 63, 117, 1);
+    }
+
+    &.active {
+        background-color: black;
+        color: white;
+    }
+}
+
+.content {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.translate {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 7px 25px;
+    a {
+        color: #8a8a8a;
+        font-size: 20px;
+        font-weight: 400;
+        cursor: pointer;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: #fff;
+        }
+
+        &.active {
+            border-bottom: 1px solid #fff;
+            color: #fff;
+        }
+    }
+}

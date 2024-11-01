@@ -11,72 +11,183 @@
     background-color: rgba(10, 17, 40, 0.4);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
+}
 
-    .content {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+.logo {
+    width: 80px;
+    height: 100%;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navsBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 0 70px;
+    justify-content: flex-start;
+}
+
+.navs {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.nav {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: center;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+}
+
+.auth {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.signUp {
+    background: none;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.5px;
+    text-align: center;
+    padding: 17px 30px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+}
+
+.follow {
+    background: rgba(3, 64, 120, 1);
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.5px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 17px 60px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+}
+@media (max-width: 1280px) {
+    .Header {
+        height: 90px;
+    }
+    .navsBlock {
+        gap: 45px;
+        padding: 0 50px;
     }
 
-    .navsBlock {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 50px;
+    .logo {
+        width: 70px;
+        height: 100%;
     }
 
     .navs {
-        display: flex;
-        flex-direction: row;
-        gap: 40px;
+        gap: 35px;
     }
 
     .nav {
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 500;
-        line-height: 19.5px;
-        text-align: center;
-        transition: transform 0.3s ease;
-
-        &:hover {
-            transform: translateY(-2px);
-        }
-    }
-
-    .auth {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
     }
 
     .signUp {
-        background: none;
-        border: none;
         font-weight: 500;
-        font-size: 16px;
-        line-height: 19.5px;
-        text-align: center;
-        padding: 17px 30px;
-        transition: transform 0.3s ease;
-
-        &:hover {
-            transform: translateY(-2px);
-        }
+        font-size: 15px;
+        padding: 16px 29px;
     }
 
     .follow {
-        background: rgba(3, 64, 120, 1);
-        border: none;
         font-weight: 500;
-        font-size: 16px;
-        line-height: 19.5px;
-        text-align: center;
-        border-radius: 10px;
-        padding: 17px 60px;
-        transition: transform 0.3s ease;
+        font-size: 15px;
+        padding: 16px 58px;
+    }
+}
 
-        &:hover {
-            transform: translateY(-2px);
-        }
+@media (max-width: 850px) {
+    .Header {
+        height: 80px;
+    }
+    .logo {
+        width: 60px;
+        height: 100%;
+    }
+    .navsBlock {
+        gap: 35px;
+        padding: 0 30px;
+    }
+
+    .navs {
+        gap: 25px;
+    }
+
+    .nav {
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .signUp {
+        font-weight: 400;
+        font-size: 13px;
+        padding: 13px 25px;
+    }
+
+    .follow {
+        font-weight: 400;
+        font-size: 13px;
+        padding: 13px 44px;
+    }
+}
+
+@media (max-width: 680px) {
+    .Header {
+        height: 70px;
+    }
+    .logo {
+        width: 50px;
+        height: 100%;
+    }
+    .navsBlock {
+        gap: 15px;
+        padding: 0 20px;
+    }
+
+    .navs {
+        gap: 15px;
+    }
+
+    .nav {
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    .signUp {
+        font-weight: 300;
+        font-size: 12px;
+        padding: 11px 21px;
+    }
+
+    .follow {
+        font-weight: 300;
+        font-size: 12px;
+        padding: 10px 40px;
     }
 }

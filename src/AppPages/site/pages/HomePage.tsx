@@ -8,6 +8,7 @@ const HomePage = () => {
       <DoYouHave/>
     </>
   );
+
 };
 
 export default HomePage;
