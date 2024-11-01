@@ -1,12 +1,14 @@
+import DoYouHave from "./DoYouHaveAQ/DoYouHave";
 import LastState from "./homeSections/LastState/LastState";
 
 const HomePage = () => {
-    return (
-        <>
-            HomePage
-            <LastState />
-        </>
-    );
+  return (
+    <>
+      <LastState />
+      <DoYouHave/>
+    </>
+  );
+
 };
 
 export default HomePage;
