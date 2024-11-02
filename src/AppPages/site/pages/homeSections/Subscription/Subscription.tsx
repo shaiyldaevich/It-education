@@ -4,6 +4,7 @@ import { useLanguageStore } from "@/stores/useLanguageStore";
 import scss from "./Subscription.module.scss";
 
 import React from "react";
+import Link from "next/link";
 
 const Subscription = () => {
     const { t } = useLanguageStore();
@@ -24,12 +25,12 @@ const Subscription = () => {
                         <button className={scss.button}>
                             {t("Жазылууну расмийләштирүү", "Оформить подписку")}
                         </button>
-                        <h1 className={scss.buttonText}>
+                        <Link href={"/Package"} className={scss.buttonText}>
                             {t(
                                 "Пакеттер жөнүндө толук маалымат",
                                 "Подробнее о пакетах"
                             )}
-                        </h1>
+                        </Link>
                     </div>
                 </div>
             </div>

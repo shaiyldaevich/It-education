@@ -7,17 +7,18 @@ import { useLanguageStore } from "@/stores/useLanguageStore";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 interface AccordionItem {
-  question: string;
-  answer: string;
+    question: string;
+    answer: string;
 }
 
 const DoYouHave: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const { t } = useLanguageStore(); // Тилди колдонуу үчүн функция
 
-  const toggleAccordion = (index: number) => {
-    setActiveIndex(activeIndex === index ? null : index);
-  };
+
+    const toggleAccordion = (index: number) => {
+        setActiveIndex(activeIndex === index ? null : index);
+    };
 
   const accordionData: AccordionItem[] = [
     {
@@ -117,14 +118,11 @@ const DoYouHave: React.FC = () => {
                   }`}
                 >
                   <p>{item.answer}</p>
+
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+            </div>
+        </section>
+    );
 };
 
 export default DoYouHave;
