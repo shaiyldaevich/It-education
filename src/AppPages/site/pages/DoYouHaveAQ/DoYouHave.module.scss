@@ -54,14 +54,11 @@
         display: flex;
         justify-content: space-between;
         cursor: pointer;
-        text-align: left; // Выровнять текст по левому краю
-        &:hover {
-          color: #3498db;
-        }
+        text-align: left;
 
         .icon {
-          font-size: 16px;
-          color: #3498db;
+          font-size: 24px;
+          color: #ffffff;
           transition: transform 0.3s;
         }
       }
