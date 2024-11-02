@@ -6,8 +6,8 @@ const HomePage = () => {
     return (
         <>
             <LastState />
-            <DoYouHave />
             <Subscription />
+            <DoYouHave />
         </>
     );
 };
