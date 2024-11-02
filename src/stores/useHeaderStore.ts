@@ -16,7 +16,7 @@ export const useHeaderStore = create<HeaderStore>((set) => ({
         {
             nameKY: "Мектеп жөнүндө",
             nameRU: "О школе",
-            href: "/#",
+            href: "/AboutSchool",
         },
         { nameKY: "Биздин курстар", nameRU: "Наши курсы", href: "#" },
         { nameKY: "Биз жөнүндө", nameRU: "О нас", href: "/#" },

@@ -1,0 +1,202 @@
+.AboutSchool {
+    padding: 120px 0;
+}
+.homeNav {
+    color: rgb(186, 186, 186);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: left;
+}
+
+.nav {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: left;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.88px;
+    text-align: left;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.38px;
+    text-align: left;
+}
+
+.bannerIMG {
+    width: 589.01px;
+    height: 534.77px;
+}
+
+.path {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about,
+.tasks {
+    padding: 30px 0;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+@media (max-width: 1080px) {
+    .title {
+        font-size: 30px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    .bannerIMG {
+        width: 489.01px;
+        height: 434.77px;
+    }
+}
+
+@media (max-width: 880px) {
+    .homeNav,
+    .nav {
+        font-size: 12px;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    .text {
+        font-size: 12px;
+    }
+
+    .bannerIMG {
+        width: 389.01px;
+        height: 334.77px;
+    }
+    .about,
+    .tasks {
+        padding: 25px 0;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 740px) {
+    .title {
+        font-size: 22px;
+    }
+
+    .text {
+        font-size: 9px;
+    }
+
+    .bannerIMG {
+        width: 289.01px;
+        height: 234.77px;
+    }
+    .about,
+    .tasks {
+        padding: 20px 0;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 630px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .title {
+        font-size: 30px;
+    }
+    .path {
+        display: none;
+    }
+
+    .about,
+    .tasks,
+    .text {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    .bannerIMG {
+        width: 489.01px;
+        height: 434.77px;
+    }
+}
+
+@media (max-width: 550px) {
+    .title {
+        font-size: 26px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    .bannerIMG {
+        width: 389.01px;
+        height: 334.77px;
+    }
+    .about,
+    .tasks {
+        padding: 25px 0;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 440px) {
+    .title {
+        font-size: 22px;
+    }
+
+    .text {
+        font-size: 12px;
+    }
+
+    .bannerIMG {
+        width: 289.01px;
+        height: 234.77px;
+    }
+    .about,
+    .tasks {
+        padding: 20px 0;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    /* styles */
+}
+
+@media (max-width: 380px) {
+    /* styles */
+}
