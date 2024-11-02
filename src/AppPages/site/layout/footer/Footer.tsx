@@ -63,7 +63,7 @@ const Footer = () => {
                             {t("Тез байланыштар", "Быстрые ссылки")}
                         </h1>
                         <div className={scss.navs}>
-                            <Link href={"#"} className={scss.nav}>
+                            <Link href={"/AboutSchool"} className={scss.nav}>
                                 {t("Мектеп жөнүндө", "О школе")}
                             </Link>
                             <Link href={"#"} className={scss.nav}>
