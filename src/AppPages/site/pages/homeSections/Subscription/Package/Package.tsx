@@ -5,6 +5,7 @@ import scss from "./Package.module.scss";
 import DoYouHave from "../../../DoYouHaveAQ/DoYouHave";
 import Link from "next/link";
 import { useLanguageStore } from "@/stores/useLanguageStore";
+import Request from "../../Request/Request";
 
 const data = [
     {
@@ -100,6 +101,7 @@ const Package = () => {
                 </div>
             </div>
             <DoYouHave />
+            <Request />
         </section>
     );
 };
