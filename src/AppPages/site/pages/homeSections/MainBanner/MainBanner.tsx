@@ -1,15 +1,21 @@
+"use client";
+
 import React from "react";
 import scss from "./MainBanner.module.scss";
 import banner from "../../../../../assets/men 1.png";
 import Image from "next/image";
+import { useLanguageStore } from "@/stores/useLanguageStore";
 
 const MainBanner = () => {
+    const { t } = useLanguageStore();
+
     return (
         <section className={scss.MainBanner}>
             <div className="container">
                 <div className={scss.content}>
                     <div className={scss.info}>
                         <h1 className={scss.title}>
+                            {t("", "IT образовательная платформа")}
                             IT образовательная платформа{" "}
                         </h1>
                         <h1 className={scss.text}>
