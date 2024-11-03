@@ -1,6 +1,8 @@
 import React from "react";
 import scss from "./DetMasterClass.module.scss";
 import AboutMasterClass from "./AboutMasterClass/AboutMasterClass";
+import ProgramMasterClass from "./Program/ProgramMasterClass";
+import WhoMasterClass from "./WhoMove/WhoMasterClass";
 const DetMasterClass = () => {
   return (
     <section className={scss.DetMasterClass}>
@@ -29,6 +31,8 @@ const DetMasterClass = () => {
         </div>
       </div>
       <AboutMasterClass />
+      <ProgramMasterClass />
+      <WhoMasterClass />
     </section>
   );
 };
