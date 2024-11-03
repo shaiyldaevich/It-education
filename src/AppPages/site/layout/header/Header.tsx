@@ -39,7 +39,7 @@ const Header = () => {
                         <>
                             <div className={scss.navsBlock}>
                                 <div className={scss.navs}>
-                                    <Link href={"#"} className={scss.nav}>
+                                    <Link href={"/about"} className={scss.nav}>
                                         {t("Мектеп жөнүндө", "О школе")}
                                     </Link>
                                     <Link href={"#"} className={scss.nav}>
