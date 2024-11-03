@@ -1,0 +1,308 @@
+.name {
+    color: black;
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.26px;
+    text-align: left;
+}
+
+.titleBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    border-radius: 10px;
+    border: none;
+    padding: 15px 70px;
+    transition: 300ms;
+    background: rgba(4, 60, 113, 1);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+        background: rgb(6, 77, 143);
+
+        padding: 15px 80px;
+    }
+}
+
+.coursesBlock {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.infoBlock {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.course {
+    padding: 30px;
+    height: 100%;
+    background: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    transition: 300ms;
+    gap: 20px;
+    &:hover {
+        box-shadow: 0px -10px 30px 0 rgb(255, 255, 255);
+
+        transform: translateY(-3px);
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.courses {
+    padding: 40px 0;
+}
+.info {
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: left;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 35px;
+    text-align: left;
+}
+
+.link {
+    cursor: pointer;
+    color: black;
+
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.5px;
+    text-align: left;
+    &:hover {
+        color: rgb(54, 54, 54);
+    }
+}
+
+@media (max-width: 1280px) {
+    .content {
+        gap: 25px;
+    }
+
+    .title {
+        font-size: 35px;
+    }
+
+    .info {
+        font-size: 15px;
+    }
+    .name {
+        font-size: 35px;
+    }
+
+    .infoBlock {
+        gap: 25px;
+    }
+
+    .link {
+        font-size: 15px;
+    }
+
+    .course {
+        padding: 25px;
+        border-radius: 14px;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .content {
+        gap: 20px;
+    }
+
+    .info {
+        font-size: 13px;
+    }
+    .name {
+        font-size: 33px;
+    }
+
+    .infoBlock {
+        gap: 25px;
+    }
+    .title {
+        font-size: 33px;
+    }
+
+    .link {
+        font-size: 13px;
+    }
+
+    .course {
+        padding: 20px;
+        border-radius: 12px;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 930px) {
+    .content {
+        gap: 15px;
+    }
+
+    .path {
+        gap: 3px;
+    }
+
+    .info {
+        font-size: 12px;
+    }
+    .name {
+        font-size: 31px;
+    }
+
+    .infoBlock {
+        gap: 20px;
+    }
+    .title {
+        font-size: 31px;
+    }
+
+    .link {
+        font-size: 12px;
+    }
+
+    .course {
+        padding: 15px;
+        border-radius: 11px;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 850px) {
+    .coursesBlock {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .content {
+        gap: 25px;
+    }
+
+    .info {
+        font-size: 15px;
+    }
+    .name {
+        font-size: 35px;
+    }
+
+    .infoBlock {
+        gap: 25px;
+    }
+    .title {
+        font-size: 35px;
+    }
+
+    .link {
+        font-size: 15px;
+    }
+
+    .coursesBlock {
+        gap: 15px;
+    }
+
+    .course {
+        padding: 25px;
+        border-radius: 14px;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .content {
+        gap: 20px;
+    }
+
+    .info {
+        font-size: 13px;
+    }
+    .name {
+        font-size: 33px;
+    }
+
+    .infoBlock {
+        gap: 25px;
+    }
+    .title {
+        font-size: 33px;
+    }
+
+    .link {
+        font-size: 13px;
+    }
+
+    .course {
+        padding: 20px;
+        border-radius: 12px;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 630px) {
+    .coursesBlock {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .content {
+        gap: 45px;
+    }
+
+    .info {
+        font-size: 15px;
+    }
+    .name {
+        font-size: 35px;
+    }
+
+    .infoBlock {
+        gap: 25px;
+    }
+    .title {
+        font-size: 35px;
+    }
+
+    .link {
+        font-size: 15px;
+    }
+
+    .coursesBlock {
+        gap: 15px;
+    }
+
+    .course {
+        padding: 25px;
+        border-radius: 14px;
+        gap: 60px;
+    }
+}

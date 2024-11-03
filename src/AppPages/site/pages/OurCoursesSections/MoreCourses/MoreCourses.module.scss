@@ -1,0 +1,387 @@
+.MoreCourses {
+    padding: 100px 0;
+}
+
+.nav {
+    color: rgb(168, 168, 168);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: left;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.path {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.titleText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.88px;
+    text-align: left;
+}
+
+.info {
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: left;
+}
+.name {
+    color: black;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 35px;
+    text-align: left;
+}
+
+.infoBlock {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+.title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 35px;
+    text-align: left;
+}
+
+.link {
+    cursor: pointer;
+    color: black;
+
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.5px;
+    text-align: left;
+    &:hover {
+        color: rgb(54, 54, 54);
+    }
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.course {
+    padding: 30px;
+    height: 100%;
+    background: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 300ms;
+    gap: 20px;
+    &:hover {
+        box-shadow: 0px -10px 30px 0 rgb(255, 255, 255);
+
+        transform: translateY(-3px);
+    }
+}
+
+@media (max-width: 1280px) {
+    .nav {
+        font-size: 15px;
+    }
+
+    .content {
+        gap: 25px;
+    }
+
+    .path {
+        gap: 5px;
+    }
+
+    .titleText {
+        font-size: 35px;
+    }
+
+    .info {
+        font-size: 15px;
+    }
+    .name {
+        font-size: 35px;
+    }
+
+    .infoBlock {
+        gap: 25px;
+    }
+    .title {
+        font-size: 35px;
+    }
+
+    .link {
+        font-size: 15px;
+    }
+
+    .courses {
+        gap: 35px;
+    }
+
+    .course {
+        padding: 25px;
+        border-radius: 14px;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .nav {
+        font-size: 13px;
+    }
+
+    .content {
+        gap: 20px;
+    }
+
+    .path {
+        gap: 4px;
+    }
+
+    .titleText {
+        font-size: 33px;
+    }
+
+    .info {
+        font-size: 13px;
+    }
+    .name {
+        font-size: 33px;
+    }
+
+    .infoBlock {
+        gap: 25px;
+    }
+    .title {
+        font-size: 33px;
+    }
+
+    .link {
+        font-size: 13px;
+    }
+
+    .courses {
+        gap: 20px;
+    }
+
+    .course {
+        padding: 20px;
+        border-radius: 12px;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 930px) {
+    .nav {
+        font-size: 11px;
+    }
+
+    .content {
+        gap: 15px;
+    }
+
+    .path {
+        gap: 3px;
+    }
+
+    .titleText {
+        font-size: 31px;
+    }
+
+    .info {
+        font-size: 12px;
+    }
+    .name {
+        font-size: 31px;
+    }
+
+    .infoBlock {
+        gap: 20px;
+    }
+    .title {
+        font-size: 31px;
+    }
+
+    .link {
+        font-size: 12px;
+    }
+
+    .courses {
+        gap: 15px;
+    }
+
+    .course {
+        padding: 15px;
+        border-radius: 11px;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 850px) {
+    .courses {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+    .nav {
+        font-size: 15px;
+    }
+
+    .content {
+        gap: 25px;
+    }
+
+    .path {
+        gap: 5px;
+    }
+
+    .titleText {
+        font-size: 35px;
+    }
+
+    .info {
+        font-size: 15px;
+    }
+    .name {
+        font-size: 35px;
+    }
+
+    .infoBlock {
+        gap: 25px;
+    }
+    .title {
+        font-size: 35px;
+    }
+
+    .link {
+        font-size: 15px;
+    }
+
+    .courses {
+        gap: 15px;
+    }
+
+    .course {
+        padding: 25px;
+        border-radius: 14px;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .nav {
+        font-size: 13px;
+    }
+
+    .content {
+        gap: 20px;
+    }
+
+    .path {
+        gap: 4px;
+    }
+
+    .titleText {
+        font-size: 33px;
+    }
+
+    .info {
+        font-size: 13px;
+    }
+    .name {
+        font-size: 33px;
+    }
+
+    .infoBlock {
+        gap: 25px;
+    }
+    .title {
+        font-size: 33px;
+    }
+
+    .link {
+        font-size: 13px;
+    }
+
+    .courses {
+        gap: 15px;
+    }
+
+    .course {
+        padding: 20px;
+        border-radius: 12px;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 630px) {
+    .courses {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .nav {
+        font-size: 15px;
+    }
+
+    .content {
+        gap: 25px;
+    }
+
+    .path {
+        gap: 5px;
+    }
+
+    .titleText {
+        font-size: 35px;
+    }
+
+    .info {
+        font-size: 15px;
+    }
+    .name {
+        font-size: 35px;
+    }
+
+    .infoBlock {
+        gap: 25px;
+    }
+    .title {
+        font-size: 35px;
+    }
+
+    .link {
+        font-size: 15px;
+    }
+
+    .courses {
+        gap: 15px;
+    }
+
+    .course {
+        padding: 25px;
+        border-radius: 14px;
+        gap: 60px;
+    }
+}

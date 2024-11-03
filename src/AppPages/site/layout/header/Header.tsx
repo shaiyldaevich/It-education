@@ -45,7 +45,10 @@ const Header = () => {
                                     >
                                         {t("Мектеп жөнүндө", "О школе")}
                                     </Link>
-                                    <Link href={"#"} className={scss.nav}>
+                                    <Link
+                                        href={"/MoreCourses"}
+                                        className={scss.nav}
+                                    >
                                         {t("Биздин курстар", "Наши курсы")}
                                     </Link>
                                     <Link href={"#"} className={scss.nav}>
