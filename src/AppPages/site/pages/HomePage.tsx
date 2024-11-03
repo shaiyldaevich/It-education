@@ -1,18 +1,17 @@
-import DoYouHave from "./DoYouHaveAQ/DoYouHave";
+import DoYouHave from "./homeSections/DoYouHaveAQ/DoYouHave";
 import LastState from "./homeSections/LastState/LastState";
 import Request from "./homeSections/Request/Request";
 import Subscription from "./homeSections/Subscription/Subscription";
 
 const HomePage = () => {
-
-    return (
-        <>
-            <LastState />
-            <Subscription />
-            <DoYouHave />
-            <Request />
-        </>
-    );
+  return (
+    <>
+      <LastState />
+      <Subscription />
+      <DoYouHave />
+      <Request />
+    </>
+  );
 };
 
 export default HomePage;
