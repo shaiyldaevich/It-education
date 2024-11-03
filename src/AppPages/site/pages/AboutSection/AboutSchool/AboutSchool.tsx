@@ -1,6 +1,6 @@
 import React from "react";
 import scss from "./AboutSchool.module.scss";
-import banner from "../../../../assets/AboutSchoolPNG.png";
+import banner from "../../../../../assets/AboutSchoolPNG.png";
 import Image from "next/image";
 import Link from "next/link";
 

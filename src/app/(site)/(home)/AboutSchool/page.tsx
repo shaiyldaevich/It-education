@@ -1,10 +1,10 @@
-import AboutSchool from "@/AppPages/site/pages/AboutSchool/AboutSchool";
+import AboutSchoolPage from "@/AppPages/site/pages/AboutSchoolPage";
 import React from "react";
 
 const page = () => {
     return (
         <div>
-            <AboutSchool />
+            <AboutSchoolPage />
         </div>
     );
 };

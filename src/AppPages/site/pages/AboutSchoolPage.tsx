@@ -1,12 +1,14 @@
-import React from 'react';
-import LevelOf from './AboutSection/LevelOf/LevelOf';
-import MasterClass from './AboutSection/MasterClass/MasterClass';
+import React from "react";
+import LevelOf from "./AboutSection/LevelOf/LevelOf";
+import MasterClass from "./AboutSection/MasterClass/MasterClass";
+import AboutSchool from "./AboutSection/AboutSchool/AboutSchool";
 
 const AboutSchoolPage = () => {
     return (
         <div>
-            <MasterClass/>
-            <LevelOf/>
+            <AboutSchool />
+            <MasterClass />
+            <LevelOf />
         </div>
     );
 };
