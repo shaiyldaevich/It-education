@@ -1,0 +1,59 @@
+.MasterClass {
+  padding: 100px 0;
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+    h1 {
+      font-size: clamp(26px, 6vw, 36px);
+      font-weight: 700;
+      line-height: 35px;
+      color: white;
+    }
+    .cards {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 50px;
+      .card {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 25px;
+        background: #fefefe;
+        max-width: 1030px;
+        width: 100%;
+        height: auto !important;
+        padding: 40px;
+        border-radius: 10px;
+        h2 {
+          font-size: clamp(10px, 4vw, 20px);
+          font-weight: 500;
+          line-height: 25px;
+          color: #043f75;
+        }
+        p {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 20px;
+          color: #000;
+        }
+      }
+    }
+    .buttons {
+      button {
+        padding: 15px 25px;
+        background: #043c71;
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+        border: none;
+        border-radius: 5px;
+      }
+    }
+  }
+}

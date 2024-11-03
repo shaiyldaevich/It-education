@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import scss from "./DoYouHave.module.scss";
 import Image from "next/image";
-import Question from "../../../../assets/image 9.svg";
+import Question from "@/assets/image 9.svg";
 import { useLanguageStore } from "@/stores/useLanguageStore";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 

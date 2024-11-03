@@ -1,4 +1,4 @@
-import DoYouHave from "./DoYouHaveAQ/DoYouHave";
+import DoYouHave from "./homeSections/DoYouHaveAQ/DoYouHave";
 import LastState from "./homeSections/LastState/LastState";
 import MainBanner from "./homeSections/MainBanner/MainBanner";
 import Request from "./homeSections/Request/Request";
