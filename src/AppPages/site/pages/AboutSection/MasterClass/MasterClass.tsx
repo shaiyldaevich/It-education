@@ -29,7 +29,13 @@ const MasterClass = () => {
           <div className={scss.cards}>
             {Master.map((item, index) => (
               <div key={index} className={scss.card}>
-                <h2>{item.title}</h2>
+                <h2
+                  onClick={() =>
+                    nav.push(`/allMasterClass/${item.description.slice(0, 30)}`)
+                  }
+                >
+                  {item.title}
+                </h2>
                 <p>{item.description}</p>
               </div>
             ))}
