@@ -14,7 +14,7 @@ interface TypographyProps {
         | "bodyXS"
         | "bodyS"
         | "bodyX"
-    weight?: "regular" | "bold" | "light";
+    weight?: "regular" | "bold" | "light"| "regularM";
     children: React.ReactNode;
     className?: string;
     color?: "white";
