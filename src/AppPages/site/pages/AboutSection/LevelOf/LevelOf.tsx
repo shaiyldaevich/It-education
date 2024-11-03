@@ -1,5 +1,7 @@
+"use client"
 import React from "react";
 import scss from "./LevelOf.module.scss";
+import { useRouter } from "next/navigation";
 const Levels = [
   {
     limit: "Месяц +",
@@ -21,6 +23,7 @@ const Levels = [
   },
 ];
 const LevelOf = () => {
+    const nav = useRouter()
   return (
     <section className={scss.LevelOf}>
       <div className="container">
@@ -41,7 +44,7 @@ const LevelOf = () => {
                 <h4>{item.payment}</h4>
                 <div className={scss.buttons}>
                   <button>Оформить подписку</button>
-                  <button>Подробнее</button>
+                  <button onClick={()=>nav.push('/Package')}>Подробнее</button>
                 </div>
               </div>
             ))}
