@@ -3,6 +3,8 @@ import scss from "./DetMasterClass.module.scss";
 import AboutMasterClass from "./AboutMasterClass/AboutMasterClass";
 import ProgramMasterClass from "./Program/ProgramMasterClass";
 import WhoMasterClass from "./WhoMove/WhoMasterClass";
+import ProcessOfMaster from "./ProcessOfMaster/ProcessOfMaster";
+import Faq from "./Faq/Faq";
 const DetMasterClass = () => {
   return (
     <section className={scss.DetMasterClass}>
@@ -33,6 +35,8 @@ const DetMasterClass = () => {
       <AboutMasterClass />
       <ProgramMasterClass />
       <WhoMasterClass />
+      <ProcessOfMaster />
+      <Faq />
     </section>
   );
 };

@@ -1,0 +1,71 @@
+.Faq {
+  padding: 100px 0;
+
+  .content {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    h1 {
+      font-size: clamp(10px, 4vw, 20px);
+      font-weight: 500;
+      color: #a5a5a5;
+      line-height: 24px;
+    }
+    h2 {
+      font-size: clamp(26px, 4vw, 36px);
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 43.88px;
+    }
+    .accordion {
+      margin-top: 50px;
+      width: 100%;
+      max-width: 600px;
+      @media (max-width: 600px) {
+        max-width: 100%;
+      }
+      .accordionItem {
+        border-bottom: 1px solid #2a2f3c;
+
+        .accordionHeader {
+          width: 100%;
+
+          background: none;
+          border: none;
+          padding: 15px 0;
+          color: #ffffff;
+          font-size: 18px;
+          font-weight: 500;
+          display: flex;
+          justify-content: space-between;
+          cursor: pointer;
+          text-align: left;
+
+          .icon {
+            font-size: 24px;
+            color: #ffffff;
+            transition: transform 0.3s;
+          }
+        }
+
+        .accordionContent {
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.3s ease, padding 0.3s ease;
+
+          p {
+            padding: 0 0 15px;
+            font-size: 16px;
+            color: #d1d3d8;
+          }
+        }
+
+        .open {
+          max-height: 100%;
+        }
+      }
+    }
+  }
+}

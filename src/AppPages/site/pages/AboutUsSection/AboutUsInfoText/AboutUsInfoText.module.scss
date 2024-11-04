@@ -1,0 +1,68 @@
+.InfoAboutus {
+  .mainInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 90px;
+    .mainTextInfo {
+      margin-top: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      h2 {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .descr {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 60px;
+        p {
+          width: 60%;
+          text-align: center;
+        }
+      }
+      .textImg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 70px;
+        img {
+          width: 40%;
+          height: 371px;
+        }
+      }
+    }
+
+    .mainSertificat {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 80px;
+      h2 {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      p {
+        text-align: center;
+      }
+      .imgSer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 30px;
+          img {
+            width: 100%;
+          }
+      }
+    }
+  }
+}
