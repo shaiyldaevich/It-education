@@ -91,8 +91,8 @@ const MoreCourses = () => {
                     </div>
                     <div className={scss.courses}>
                         {" "}
-                        {courses.map((item) => (
-                            <div key={item.id} className={scss.course}>
+                        {courses.map((item, index) => (
+                            <div key={index} className={scss.course}>
                                 <div className={scss.infoBlock}>
                                     <h1 className={scss.name}>{item.name}</h1>
                                     <h1 className={scss.info}>{item.info}</h1>
