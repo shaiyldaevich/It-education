@@ -26,7 +26,7 @@ const program = [
 ];
 const ProgramMasterClass = () => {
   return (
-    <div className={scss.ProgramMasterClass}>
+    <div id="programm" className={scss.ProgramMasterClass}>
       <div className="container">
         <div className={scss.content}>
           <div className={scss.left}>
