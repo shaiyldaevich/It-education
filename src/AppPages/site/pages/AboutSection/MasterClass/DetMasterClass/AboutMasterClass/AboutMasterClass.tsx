@@ -1,5 +1,8 @@
+"use client";
 import React from "react";
 import scss from "./AboutMasterClass.module.scss";
+import { Link as Scrollhref } from "react-scroll";
+
 const AboutMasterClass = () => {
   return (
     <div className={scss.AboutMasterClass}>
@@ -32,7 +35,16 @@ const AboutMasterClass = () => {
             </div>
             <div className={scss.buttons}>
               <button>Купить мастер-класс </button>
-              <button>Смотреть программу</button>
+              <Scrollhref
+                activeClass="active"
+                to='programm'
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+              >
+                <button>Смотреть программу</button>
+              </Scrollhref>
             </div>
           </div>
           <div className={scss.right}>
