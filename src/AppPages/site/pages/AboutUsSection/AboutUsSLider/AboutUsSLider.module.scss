@@ -1,19 +1,18 @@
 .mainSlider {
-  margin-bottom: 80px;
+  margin-bottom: 20px;
+  height: 100%;
   .slider {
     h2 {
       text-align: center;
-      margin-bottom: 60px;
+      margin-bottom: 50px;
     }
 
     .sliderBox {
-      width: 100%;
-
-      
+      height: 350px;
       .card {
         position: relative;
         padding: 20px;
-        width: 500px;
+        width: 50% ;
         height: 272px;
         background-color: #102146;
         border-radius: 20px;
@@ -21,13 +20,12 @@
         -moz-border-radius: 20px;
         -ms-border-radius: 20px;
         -o-border-radius: 20px;
-        margin: 70px 0;
-        margin-right: 40px;
+        margin: 50px 0;
 
         .img {
           position: absolute;
-          top: -39;
-          left: 210;
+          top: -40;
+          left: 42%;
           flex-direction: column;
           align-items: center;
           justify-content: center;
@@ -47,16 +45,17 @@
           display: flex;
           align-items: center;
           flex-direction: column;
-          margin-top: 38px;
-          gap: 20px;
+          margin-top: 25px;
           .descr {
             text-align: center;
-            width: 70%;
-            height: 112px;
+            width: 100%;
+          }
+          .name{
+            margin-bottom: -2px;
           }
         }
         .date {
-          margin-top: 20px;
+          margin-top:  1px;
           p {
             text-align: right;
           }

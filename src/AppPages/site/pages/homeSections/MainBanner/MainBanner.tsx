@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import scss from "./MainBanner.module.scss";
 import banner from "../../../../../assets/men 1.png";
@@ -16,7 +15,6 @@ const MainBanner = () => {
                     <div className={scss.info}>
                         <h1 className={scss.title}>
                             {t("", "IT образовательная платформа")}
-                            IT образовательная платформа{" "}
                         </h1>
                         <h1 className={scss.text}>
                             Наша образовательная платформа вам даст необходимые
