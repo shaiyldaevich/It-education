@@ -1,0 +1,68 @@
+.mainSlider {
+  margin-bottom: 80px;
+  .slider {
+    h2 {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .sliderBox {
+      width: 100%;
+
+      
+      .card {
+        position: relative;
+        padding: 20px;
+        width: 500px;
+        height: 272px;
+        background-color: #102146;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        margin: 70px 0;
+        margin-right: 40px;
+
+        .img {
+          position: absolute;
+          top: -39;
+          left: 210;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+          img {
+            width: 76px;
+            height: 76px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+          }
+        }
+        .text {
+          text-align: center;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          margin-top: 38px;
+          gap: 20px;
+          .descr {
+            text-align: center;
+            width: 70%;
+            height: 112px;
+          }
+        }
+        .date {
+          margin-top: 20px;
+          p {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
+

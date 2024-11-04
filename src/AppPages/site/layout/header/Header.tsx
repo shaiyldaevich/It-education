@@ -51,7 +51,7 @@ const Header = () => {
                                     >
                                         {t("Биздин курстар", "Наши курсы")}
                                     </Link>
-                                    <Link href={"#"} className={scss.nav}>
+                                    <Link href={"/aboutUs"} className={scss.nav}>
                                         {t("Биз жөнүндө", "О нас")}
                                     </Link>
                                 </div>
