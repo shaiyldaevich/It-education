@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import scss from "./AboutSchool.module.scss";
 import banner from "../../../../../assets/AboutSchoolPNG.png";
