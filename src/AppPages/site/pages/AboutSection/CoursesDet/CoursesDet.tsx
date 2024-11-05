@@ -7,6 +7,9 @@ import Link from "next/link";
 import { useLanguageStore } from "@/stores/useLanguageStore";
 import CourseInfo from "./CoursesDetSections/CourseInfo/CourseInfo";
 import AboutUsSLider from "../../AboutUsSection/AboutUsSLider/AboutUsSLider";
+import WhoMasterClass from "../MasterClass/DetMasterClass/WhoMove/WhoMasterClass";
+import ProgramMasterClass from "../MasterClass/DetMasterClass/Program/ProgramMasterClass";
+import AboutCourseDet from "./CoursesDetSections/AboutCourseDet/AboutCourseDet";
 
 const CoursesDet = () => {
     const params = useParams();
@@ -125,7 +128,10 @@ const CoursesDet = () => {
                 </div>
             </div>
             <CourseInfo />
+            <AboutCourseDet />
             <AboutUsSLider />
+            <ProgramMasterClass />
+            <WhoMasterClass />
         </div>
     );
 };
