@@ -20,7 +20,7 @@ const DetMasterClass = () => {
         <Link className={scss.nav} href={"/allMasterClass"}>
           Мастер классы/
         </Link>
-        <Link className={scss.nav} href={"/allMasterClass"}>
+        <Link className={scss.navAb} href={"/allMasterClass"}>
           Реактивное программирование на Java
         </Link>
         <div className={scss.content}>
