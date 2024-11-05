@@ -5,8 +5,18 @@
     justify-content: center;
     flex-direction: column;
     gap: 90px;
+
+    .breatcrums {
+      margin-top: 140px;
+      margin-left: -75pc;
+      p {
+        text-align: right;
+      }
+      span {
+        color: rgb(165, 165, 165);
+      }
+    }
     .mainTextInfo {
-      margin-top: 150px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -41,11 +51,11 @@
     }
 
     .mainSertificat {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        margin-bottom: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 80px;
       h2 {
         text-align: center;
         margin-bottom: 40px;
@@ -59,9 +69,9 @@
         justify-content: center;
         flex-direction: column;
         margin-top: 30px;
-          img {
-            width: 100%;
-          }
+        img {
+          width: 100%;
+        }
       }
     }
   }

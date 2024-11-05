@@ -5,6 +5,7 @@ import Image from "next/image";
 import img1 from "../../../../../assets/aboutUa1.png";
 import img2 from "../../../../../assets/aboutUa2.png";
 import img3 from "../../../../../assets/sertificat.png";
+import Link from "next/link";
 
 const AboutUsInfoText = () => {
   const aboutUs = [
@@ -30,6 +31,15 @@ const AboutUsInfoText = () => {
     <div className={styles.InfoAboutus}>
       <div className="container">
         <div className={styles.mainInfo}>
+          <div className={styles.breatcrums}>
+            <Typography variant="bodyL" weight="light">
+              <span>
+                {" "}
+                <Link href={"/"}>Главная</Link>{" "}
+              </span>
+              / О нас
+            </Typography>
+          </div>
           <div className={styles.mainTextInfo}>
             {aboutUs.map((el, index) => (
               <div key={index}>
@@ -51,7 +61,6 @@ const AboutUsInfoText = () => {
               </div>
             ))}
           </div>
-
           <div className={styles.mainSertificat}>
             {aboutUs2.map((el, index) => (
               <div key={index}>
@@ -62,7 +71,7 @@ const AboutUsInfoText = () => {
                   {el.descr}
                 </Typography>
                 <div className={styles.imgSer}>
-                <Image src={img3} alt="img" />
+                  <Image src={img3} alt="img" />
                 </div>
               </div>
             ))}
