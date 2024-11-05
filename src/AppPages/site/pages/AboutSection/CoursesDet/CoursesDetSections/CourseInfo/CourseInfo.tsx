@@ -60,7 +60,7 @@ const CourseInfo = () => {
     const selectedCourse = courses.find((course) => course.id === courseId);
 
     return (
-        <div className={scss.CourseInfo}>
+        <section className={scss.CourseInfo}>
             <div className="container">
                 <div className={scss.content}>
                     <div className={scss.path}>
@@ -127,7 +127,7 @@ const CourseInfo = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

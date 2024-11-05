@@ -2,6 +2,7 @@
 import React from "react";
 import scss from "./AboutCourseDet..module.scss";
 import { useParams } from "next/navigation";
+import { Link as Scrollhref } from "react-scroll";
 
 const AboutCourseDet = () => {
     const params = useParams();
@@ -66,7 +67,7 @@ const AboutCourseDet = () => {
     const selectedCourse = courses.find((course) => course.id === courseId);
 
     return (
-        <div className={scss.AboutCourseDet}>
+        <section className={scss.AboutCourseDet}>
             <div className="container">
                 <div className={scss.content}>
                     <div className={scss.advantages}>
@@ -105,15 +106,36 @@ const AboutCourseDet = () => {
                             будьте счастливы!
                         </h1>
                         <div className={scss.buttons}>
-                            <button className={scss.buy}>Купить курс</button>
-                            <button className={scss.check}>
-                                Смотреть программу
-                            </button>
+                            <Scrollhref
+                                activeClass="active"
+                                to="buy"
+                                spy={true}
+                                smooth={true}
+                                offset={0}
+                                duration={500}
+                            >
+                                <button className={scss.buy}>
+                                    Купить курс
+                                </button>
+                            </Scrollhref>
+
+                            <Scrollhref
+                                activeClass="active"
+                                to="coursesProgramm"
+                                spy={true}
+                                smooth={true}
+                                offset={0}
+                                duration={500}
+                            >
+                                <button className={scss.check}>
+                                    Смотреть программу
+                                </button>
+                            </Scrollhref>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

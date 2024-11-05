@@ -1,0 +1,120 @@
+.BuyInputs {
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        gap: 18px;
+        width: 100%;
+        .nameInput {
+            .inputText {
+                color: white;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 10.5px;
+                text-align: left;
+            }
+            .input {
+                font-size: 20px;
+
+                border-radius: 10px;
+                color: white;
+                outline: none;
+                border: 2px solid gray;
+                background: transparent;
+                width: 100%;
+                transition: 300ms;
+                padding: 20px 15px;
+                &:hover {
+                    border: 2px solid rgb(255, 255, 255);
+                }
+            }
+        }
+        .numberInput {
+            .inputText {
+                color: white;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 10.5px;
+                text-align: left;
+            }
+            .inputBlock {
+                border: 2px solid gray;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                transition: 300ms;
+                padding: 0 10px;
+
+                .inputBlockText {
+                    border-right: 2px solid white;
+                    color: white;
+                    padding: 0 15px 0 0;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 24.38px;
+                    text-align: left;
+                }
+                .input {
+                    font-size: 20px;
+                    color: white;
+                    outline: none;
+                    border: none;
+                    background: transparent;
+                    width: 100%;
+                    padding: 20px 10px;
+                }
+            }
+        }
+        .emailInput {
+            .inputText {
+                color: white;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 10.5px;
+                text-align: left;
+            }
+            .input {
+                font-size: 20px;
+
+                border-radius: 10px;
+                color: white;
+                outline: none;
+                border: 2px solid gray;
+                background: transparent;
+                width: 100%;
+                transition: 300ms;
+                padding: 20px 15px;
+                &:hover {
+                    border: 2px solid rgb(255, 255, 255);
+                }
+            }
+        }
+        .cardNumber {
+            .inputText {
+                color: white;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 10.5px;
+                text-align: left;
+            }
+            .input {
+                font-size: 20px;
+
+                border-radius: 10px;
+                color: white;
+                outline: none;
+                border: 2px solid gray;
+                background: transparent;
+                width: 100%;
+                transition: 300ms;
+                padding: 20px 15px;
+                &:hover {
+                    border: 2px solid rgb(255, 255, 255);
+                }
+            }
+        }
+    }
+}

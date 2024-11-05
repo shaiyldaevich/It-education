@@ -30,12 +30,12 @@ const programm = [
 ];
 const CourseProgramm = () => {
     return (
-        <div className={scss.ProgramMasterClass}>
+        <section className={scss.ProgramMasterClass}>
             <div className="container">
                 <div className={scss.content}>
                     <div className={scss.left}>
-                        <h1>ПРОГРАММА КУРСА</h1>
-                        <div className={scss.cards}>
+                        <h1 id="coursesProgramm">ПРОГРАММА КУРСА</h1>
+                        <div id="coursesProgramm" className={scss.cards}>
                             {programm.map((item, index) => (
                                 <div className={scss.card} key={index}>
                                     <h2>{item.id}</h2>
@@ -52,7 +52,7 @@ const CourseProgramm = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

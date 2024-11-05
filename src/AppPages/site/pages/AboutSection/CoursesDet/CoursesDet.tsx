@@ -1,6 +1,6 @@
 "use client";
 
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import React from "react";
 import scss from "./CoursesDet.module.scss";
 import Link from "next/link";
@@ -8,12 +8,15 @@ import { useLanguageStore } from "@/stores/useLanguageStore";
 import CourseInfo from "./CoursesDetSections/CourseInfo/CourseInfo";
 import AboutUsSLider from "../../AboutUsSection/AboutUsSLider/AboutUsSLider";
 import WhoMasterClass from "../MasterClass/DetMasterClass/WhoMove/WhoMasterClass";
-import ProgramMasterClass from "../MasterClass/DetMasterClass/Program/ProgramMasterClass";
 import AboutCourseDet from "./CoursesDetSections/AboutCourseDet/AboutCourseDet";
 import CourseProgramm from "./CoursesDetSections/CourseProgramm/CourseProgramm";
 import Faq from "../MasterClass/DetMasterClass/Faq/Faq";
+import LearnProcess from "./CoursesDetSections/LearnProcess/LearnProcess";
+import SecondLearnProcess from "./CoursesDetSections/SecondLearnProcess/SecondLearnProcess";
 
 const CoursesDet = () => {
+    const router = useRouter();
+
     const params = useParams();
     const { t } = useLanguageStore();
 
@@ -54,7 +57,7 @@ const CoursesDet = () => {
     const selectedCourse = courses.find((course) => course.id === courseId);
 
     return (
-        <div className={scss.CoursesDet}>
+        <section id="buy" className={scss.CoursesDet}>
             <div className="container">
                 <div className={scss.content}>
                     <div className={scss.path}>
@@ -80,13 +83,20 @@ const CoursesDet = () => {
                                     <h1 className={scss.text}>
                                         {selectedCourse.info}
                                     </h1>
-                                    <button className={scss.button}>
+                                    <h1
+                                        onClick={() =>
+                                            router.push(
+                                                `/confirm/${selectedCourse.id}`
+                                            )
+                                        }
+                                        className={scss.button}
+                                    >
                                         {t(
                                             "Курс сатып алуу ",
                                             "Купить курс за "
                                         )}
                                         {selectedCourse.price} ${" "}
-                                    </button>
+                                    </h1>
                                 </div>
                                 <div className={scss.advantages}>
                                     <div className={scss.access}>
@@ -133,9 +143,11 @@ const CoursesDet = () => {
             <AboutCourseDet />
             <AboutUsSLider />
             <CourseProgramm />
+            <LearnProcess />
             <WhoMasterClass />
+            <SecondLearnProcess />
             <Faq />
-        </div>
+        </section>
     );
 };
 
