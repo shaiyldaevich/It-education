@@ -1,6 +1,16 @@
 .MasterClass {
   padding: 150px 0;
-
+  .homeNav {
+    color: rgb(175, 172, 172);
+    margin-right: 5px !important;
+  }
+  .nav {
+    color: rgb(255, 254, 254);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: left;
+  }
   .content {
     display: flex;
     align-items: center;
