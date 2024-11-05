@@ -28,14 +28,10 @@ const MasterClass = () => {
           <h1>Мастер-классы</h1>
           <div className={scss.cards}>
             {Master.map((item, index) => (
-              <div key={index} className={scss.card}>
-                <h2
-                  onClick={() =>
-                    nav.push(`/allMasterClass/${item.description.slice(0, 30)}`)
-                  }
-                >
-                  {item.title}
-                </h2>
+              <div key={index} className={scss.card} onClick={() =>
+                nav.push(`/allMasterClass/${item.description.slice(0, 30)}`)
+              }>
+                <h2>{item.title}</h2>
                 <p>{item.description}</p>
               </div>
             ))}
