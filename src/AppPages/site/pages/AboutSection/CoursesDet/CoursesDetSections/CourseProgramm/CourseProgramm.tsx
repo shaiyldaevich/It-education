@@ -1,15 +1,15 @@
 import React from "react";
-import scss from "./ProgramMasterClass.module.scss";
+import scss from "./CourseProgramm.module.scss";
 import Image from "next/image";
 import Img from "@/assets/MasterClassImg.svg";
-const program = [
+const programm = [
     {
         id: 1,
         title: "Reactivity",
     },
     {
         id: 2,
-        title: "",
+        title: "Reactive approach",
     },
     {
         id: 3,
@@ -23,16 +23,20 @@ const program = [
         id: 5,
         title: "Reactive Streams spec",
     },
+    {
+        id: 6,
+        title: "Reactive Streams spec",
+    },
 ];
-const ProgramMasterClass = () => {
+const CourseProgramm = () => {
     return (
-        <div className={scss.ProgramMasterClass}>
+        <section className={scss.ProgramMasterClass}>
             <div className="container">
                 <div className={scss.content}>
                     <div className={scss.left}>
-                        <h1>ПРОГРАММА МАСТЕР-КЛАССА</h1>
-                        <div className={scss.cards}>
-                            {program.map((item, index) => (
+                        <h1 id="coursesProgramm">ПРОГРАММА КУРСА</h1>
+                        <div id="coursesProgramm" className={scss.cards}>
+                            {programm.map((item, index) => (
                                 <div className={scss.card} key={index}>
                                     <h2>{item.id}</h2>
                                     <p>{item.title}</p>
@@ -40,7 +44,7 @@ const ProgramMasterClass = () => {
                             ))}
                         </div>
                         <div className={scss.buttons}>
-                            <button>Купить мастер-класс </button>
+                            <button>Зарегистрироваться </button>
                         </div>
                     </div>
                     <div className={scss.right}>
@@ -48,8 +52,8 @@ const ProgramMasterClass = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
-export default ProgramMasterClass;
+export default CourseProgramm;

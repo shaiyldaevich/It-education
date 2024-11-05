@@ -1,363 +1,363 @@
 .title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 43.88px;
-  text-align: left;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.88px;
+    text-align: left;
 }
 
 .text {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19.5px;
-  text-align: left;
-  width: 426px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: left;
+    width: 426px;
 }
 
 .inputText {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19.5px;
-  text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: left;
 }
 
 .info {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 25px;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    justify-content: center;
 }
 
 .Request {
-  padding: 100px 0;
+    padding: 100px 0;
 }
 
 .forum {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 25px;
 }
 .inputBlock {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
 }
 
 .input {
-  width: 770px;
-  height: 55px;
-  background: #002547;
-  border: none;
-  padding: 10px;
-  font-size: 18px;
-  outline: none;
-  border-radius: 10px;
+    width: 770px;
+    height: 55px;
+    background: #002547;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    outline: none;
+    border-radius: 10px;
 }
 
 .content {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .button {
-  cursor: pointer;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 19.5px;
-  text-align: left;
-  padding: 18px 90px;
-  border: none;
-  border-radius: 10px;
-  transition: 300ms;
-  background: rgba(4, 64, 118, 1);
-  &:hover {
-    transform: translateX(3px);
-  }
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: left;
+    padding: 18px 90px;
+    border: none;
+    border-radius: 10px;
+    transition: 300ms;
+    background: rgba(4, 64, 118, 1);
+    &:hover {
+        transform: translateX(3px);
+    }
 }
 
 @media (max-width: 1280px) {
-  .title {
-    font-size: 34px;
-  }
+    .title {
+        font-size: 34px;
+    }
 
-  .text {
-    font-size: 15px;
-    width: 426px;
-  }
+    .text {
+        font-size: 15px;
+        width: 426px;
+    }
 
-  .text {
-    width: 400px;
-    font-size: 15px;
-  }
+    .text {
+        width: 400px;
+        font-size: 15px;
+    }
 
-  .info {
-    gap: 25px;
-  }
+    .info {
+        gap: 25px;
+    }
 
-  .Request {
-    padding: 100px 0;
-  }
+    .Request {
+        padding: 100px 0;
+    }
 
-  .forum {
-    gap: 25px;
-  }
+    .forum {
+        gap: 25px;
+    }
 
-  .input {
-    width: 670px;
-    height: 55px;
-    padding: 10px;
-    font-size: 17px;
-  }
+    .input {
+        width: 670px;
+        height: 55px;
+        padding: 10px;
+        font-size: 17px;
+    }
 
-  .button {
-    font-size: 16px;
-    padding: 18px 80px;
-  }
+    .button {
+        font-size: 16px;
+        padding: 18px 80px;
+    }
 }
 
 @media (max-width: 1130px) {
-  .title {
-    font-size: 32px;
-  }
+    .title {
+        font-size: 32px;
+    }
 
-  .text {
-    width: 350px;
-    font-size: 14px;
-  }
+    .text {
+        width: 350px;
+        font-size: 14px;
+    }
 
-  .info {
-    gap: 20px;
-  }
+    .info {
+        gap: 20px;
+    }
 
-  .forum {
-    gap: 20px;
-  }
+    .forum {
+        gap: 20px;
+    }
 
-  .input {
-    width: 570px;
-    height: 50px;
-    padding: 9px;
-    font-size: 15px;
-  }
+    .input {
+        width: 570px;
+        height: 50px;
+        padding: 9px;
+        font-size: 15px;
+    }
 
-  .button {
-    font-size: 14px;
-    padding: 18px 70px;
-  }
+    .button {
+        font-size: 14px;
+        padding: 18px 70px;
+    }
 }
 
 @media (max-width: 960px) {
-  .title {
-    font-size: 30px;
-  }
+    .title {
+        font-size: 30px;
+    }
 
-  .text {
-    width: 300px;
-    font-size: 13px;
-  }
+    .text {
+        width: 300px;
+        font-size: 13px;
+    }
 
-  .info {
-    gap: 20px;
-  }
+    .info {
+        gap: 20px;
+    }
 
-  .forum {
-    gap: 20px;
-  }
+    .forum {
+        gap: 20px;
+    }
 
-  .input {
-    width: 470px;
-    height: 50px;
-    padding: 8px;
-    font-size: 14px;
-  }
+    .input {
+        width: 470px;
+        height: 50px;
+        padding: 8px;
+        font-size: 14px;
+    }
 
-  .button {
-    font-size: 13px;
-    padding: 18px 60px;
-  }
+    .button {
+        font-size: 13px;
+        padding: 18px 60px;
+    }
 }
 
 @media (max-width: 850px) {
-  .title {
-    font-size: 28px;
-  }
+    .title {
+        font-size: 28px;
+    }
 
-  .text {
-    width: 250px;
-    font-size: 12px;
-  }
+    .text {
+        width: 250px;
+        font-size: 12px;
+    }
 
-  .info {
-    gap: 20px;
-  }
+    .info {
+        gap: 20px;
+    }
 
-  .forum {
-    gap: 20px;
-  }
+    .forum {
+        gap: 20px;
+    }
 
-  .input {
-    width: 400px;
-    height: 50px;
-    font-size: 13px;
-  }
+    .input {
+        width: 400px;
+        height: 50px;
+        font-size: 13px;
+    }
 
-  .button {
-    font-size: 12px;
-    padding: 18px 50px;
-  }
+    .button {
+        font-size: 12px;
+        padding: 18px 50px;
+    }
 }
 
 @media (max-width: 740px) {
-  .title {
-    font-size: 26px;
-  }
+    .title {
+        font-size: 26px;
+    }
 
-  .text {
-    width: 250px;
-    font-size: 11px;
-  }
+    .text {
+        width: 250px;
+        font-size: 11px;
+    }
 
-  .info {
-    gap: 20px;
-  }
+    .info {
+        gap: 20px;
+    }
 
-  .forum {
-    gap: 20px;
-  }
+    .forum {
+        gap: 20px;
+    }
 
-  .input {
-    width: 350px;
-    height: 45px;
-    font-size: 12px;
-  }
+    .input {
+        width: 350px;
+        height: 45px;
+        font-size: 12px;
+    }
 
-  .button {
-    font-size: 11px;
-    padding: 15px 40px;
-  }
+    .button {
+        font-size: 11px;
+        padding: 15px 40px;
+    }
 }
 
 @media (max-width: 660px) {
-  .title {
-    font-size: 24px;
-  }
+    .title {
+        font-size: 24px;
+    }
 
-  .text {
-    width: 200px;
-    font-size: 10px;
-  }
+    .text {
+        width: 200px;
+        font-size: 10px;
+    }
 
-  .info {
-    gap: 20px;
-  }
+    .info {
+        gap: 20px;
+    }
 
-  .forum {
-    gap: 20px;
-  }
+    .forum {
+        gap: 20px;
+    }
 
-  .input {
-    width: 300px;
-    height: 40px;
-    font-size: 11px;
-  }
+    .input {
+        width: 300px;
+        height: 40px;
+        font-size: 11px;
+    }
 
-  .button {
-    font-size: 10px;
-    padding: 10px 30px;
-  }
+    .button {
+        font-size: 10px;
+        padding: 10px 30px;
+    }
 }
 
 @media (max-width: 630px) {
-  .content {
-    display: flex;
-    width: 100%;
-    gap: 30px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .title {
-    font-size: 34px;
-  }
+    .content {
+        display: flex;
+        width: 100%;
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .title {
+        font-size: 34px;
+    }
 
-  .text {
-    text-align: center;
-    width: 100%;
-    font-size: 15px;
-  }
+    .text {
+        text-align: center;
+        width: 100%;
+        font-size: 15px;
+    }
 
-  .info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+    .info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
 
-    gap: 25px;
-  }
+        gap: 25px;
+    }
 
-  .inputBlock {
-    padding: 10px 0;
-  }
+    .inputBlock {
+        padding: 10px 0;
+    }
 
-  .Request {
-    padding: 100px 0;
-  }
+    .Request {
+        padding: 100px 0;
+    }
 
-  .action {
-    padding: 20px 0 0 0;
-  }
+    .action {
+        padding: 20px 0 0 0;
+    }
 
-  .forum {
-    display: block;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
+    .forum {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
 
-  .input {
-    width: 100%;
-    height: 55px;
-    padding: 10px;
-    font-size: 17px;
-  }
+    .input {
+        width: 100%;
+        height: 55px;
+        padding: 10px;
+        font-size: 17px;
+    }
 
-  .button {
-    font-size: 16px;
-    padding: 18px 80px;
-  }
+    .button {
+        font-size: 16px;
+        padding: 18px 80px;
+    }
 }
 
 @media (max-width: 600px) {
-  /* styles */
+    /* styles */
 }
 
 @media (max-width: 550px) {
-  /* styles */
+    /* styles */
 }
 
 @media (max-width: 500px) {
-  /* styles */
+    /* styles */
 }
 
 @media (max-width: 470px) {
-  /* styles */
+    /* styles */
 }
 
 @media (max-width: 440px) {
-  /* styles */
+    /* styles */
 }
 
 @media (max-width: 400px) {
-  /* styles */
+    /* styles */
 }
 
 @media (max-width: 380px) {
-  /* styles */
+    /* styles */
 }

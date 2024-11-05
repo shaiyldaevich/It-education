@@ -1,22 +1,12 @@
 "use client";
 
-import { useParams, useRouter } from "next/navigation";
 import React from "react";
-import scss from "./CoursesDet.module.scss";
+import scss from "./CourseInfo.module.scss";
 import Link from "next/link";
+import { useParams } from "next/navigation";
 import { useLanguageStore } from "@/stores/useLanguageStore";
-import CourseInfo from "./CoursesDetSections/CourseInfo/CourseInfo";
-import AboutUsSLider from "../../AboutUsSection/AboutUsSLider/AboutUsSLider";
-import WhoMasterClass from "../MasterClass/DetMasterClass/WhoMove/WhoMasterClass";
-import AboutCourseDet from "./CoursesDetSections/AboutCourseDet/AboutCourseDet";
-import CourseProgramm from "./CoursesDetSections/CourseProgramm/CourseProgramm";
-import Faq from "../MasterClass/DetMasterClass/Faq/Faq";
-import LearnProcess from "./CoursesDetSections/LearnProcess/LearnProcess";
-import SecondLearnProcess from "./CoursesDetSections/SecondLearnProcess/SecondLearnProcess";
 
-const CoursesDet = () => {
-    const router = useRouter();
-
+const CourseInfo = () => {
     const params = useParams();
     const { t } = useLanguageStore();
 
@@ -28,7 +18,11 @@ const CoursesDet = () => {
             access: "навсегда",
             includes: ["9 модулей"],
             price: 200,
-
+            details: [
+                "Это всё, что ты видишь и кликаешь на сайте или в приложении - картинки, кнопочки, анимации и даже бесячая реклама.",
+                "Самые главные инструменты frontend разработки сайтов это JavaScript, HTML и CSS.",
+                "В Кыргызстане фронтенд-разработчики востребованы практически в каждой IT-компании. Это также одно из самых популярных направлений для фриланса и удаленной работы. Все потому, что в современном мире сайт нужен каждому",
+            ],
             materials: "60 материалов",
             name: "Frontend-разработчик",
             info: "Мастер создания сайтов. Умеет делать их красивыми, интерактивными, с большим функционалом. Профессия отлично подойдет тем, кто хочет фрилансить и постоянно разрабатывать новые проекты",
@@ -39,7 +33,11 @@ const CoursesDet = () => {
 
             access: "месяц",
             price: 900,
-
+            details: [
+                "Это всё, что ты видишь и кликаешь на сайте или в приложении - картинки, кнопочки, анимации и даже бесячая реклама.",
+                "Самые главные инструменты frontend разработки сайтов это JavaScript, HTML и CSS.",
+                "В Кыргызстане фронтенд-разработчики востребованы практически в каждой IT-компании. Это также одно из самых популярных направлений для фриланса и удаленной работы. Все потому, что в современном мире сайт нужен каждому",
+            ],
             materials: "90 материалов",
             name: "Backend-разработчик",
             info: "Специалист, который отвечает за построение логики для воплощения любой идеи. Он собирает фундамент и опорную систему для проекта - от простого сайта для магазина одежды до сложных вычислительных систем нейронных сетей.",
@@ -49,6 +47,11 @@ const CoursesDet = () => {
             includes: ["3 модулей", "30 материалов"],
             price: 40,
             access: "год",
+            details: [
+                "Это всё, что ты видишь и кликаешь на сайте или в приложении - картинки, кнопочки, анимации и даже бесячая реклама.",
+                "Самые главные инструменты frontend разработки сайтов это JavaScript, HTML и CSS.",
+                "В Кыргызстане фронтенд-разработчики востребованы практически в каждой IT-компании. Это также одно из самых популярных направлений для фриланса и удаленной работы. Все потому, что в современном мире сайт нужен каждому",
+            ],
             name: "UX / UI Дизайнер",
             info: "Креативный специалист, который придумывает дизайн и интерфейс продукта. Специалист UX/UI отвечает за подбор форм, цветов, Функциональности дизайна и прочих важных параметров для комфорьного использования продукта.",
         },
@@ -57,46 +60,31 @@ const CoursesDet = () => {
     const selectedCourse = courses.find((course) => course.id === courseId);
 
     return (
-        <section id="buy" className={scss.CoursesDet}>
+        <section className={scss.CourseInfo}>
             <div className="container">
                 <div className={scss.content}>
                     <div className={scss.path}>
-                        <Link className={scss.navPath} href={"/"}>
-                            {t("Башкы /", "Главная /")}
-                        </Link>
-                        <Link className={scss.navPath} href={"/MoreCourses"}>
-                            {" "}
-                            {t("Биздин курстар /", "Наши курсы /")}
-                        </Link>
                         <Link className={scss.coursePath} href={"#"}>
-                            {" "}
-                            {selectedCourse?.name}
+                            {t("Эмне, кантип жана эмнеге", "Что, как и почему")}
                         </Link>
                     </div>
                     <div className={scss.courseBlock}>
                         {selectedCourse ? (
                             <div className={scss.course}>
                                 <div className={scss.info}>
-                                    <h1 className={scss.name}>
-                                        {selectedCourse.name}
-                                    </h1>
-                                    <h1 className={scss.text}>
-                                        {selectedCourse.info}
-                                    </h1>
-                                    <h1
-                                        onClick={() =>
-                                            router.push(
-                                                `/confirm/${selectedCourse.id}`
+                                    <h1 className={scss.name}>О КУРСЕ</h1>
+                                    <div className={scss.courseDetInfo}>
+                                        {selectedCourse.details?.map(
+                                            (text, index) => (
+                                                <h1
+                                                    key={index}
+                                                    className={scss.text}
+                                                >
+                                                    {text}
+                                                </h1>
                                             )
-                                        }
-                                        className={scss.button}
-                                    >
-                                        {t(
-                                            "Курс сатып алуу ",
-                                            "Купить курс за "
                                         )}
-                                        {selectedCourse.price} ${" "}
-                                    </h1>
+                                    </div>
                                 </div>
                                 <div className={scss.advantages}>
                                     <div className={scss.access}>
@@ -139,16 +127,8 @@ const CoursesDet = () => {
                     </div>
                 </div>
             </div>
-            <CourseInfo />
-            <AboutCourseDet />
-            <AboutUsSLider />
-            <CourseProgramm />
-            <LearnProcess />
-            <WhoMasterClass />
-            <SecondLearnProcess />
-            <Faq />
         </section>
     );
 };
 
-export default CoursesDet;
+export default CourseInfo;
