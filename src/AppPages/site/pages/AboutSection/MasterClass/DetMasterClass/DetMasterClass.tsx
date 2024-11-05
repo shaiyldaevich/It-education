@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import scss from "./DetMasterClass.module.scss";
 import AboutMasterClass from "./AboutMasterClass/AboutMasterClass";
@@ -5,10 +6,23 @@ import ProgramMasterClass from "./Program/ProgramMasterClass";
 import WhoMasterClass from "./WhoMove/WhoMasterClass";
 import ProcessOfMaster from "./ProcessOfMaster/ProcessOfMaster";
 import Faq from "./Faq/Faq";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
 const DetMasterClass = () => {
+  const nav = useRouter();
   return (
     <section className={scss.DetMasterClass}>
       <div className="container">
+        <Link className={scss.homeNav} href={"/"}>
+          Главная/
+        </Link>
+
+        <Link className={scss.nav} href={"/allMasterClass"}>
+          Мастер классы/
+        </Link>
+        <Link className={scss.navAb} href={"/allMasterClass"}>
+          Реактивное программирование на Java
+        </Link>
         <div className={scss.content}>
           <div className={scss.left}>
             <h1>
@@ -20,7 +34,9 @@ const DetMasterClass = () => {
               лет 10 назад. Что вызвало популярность этого относительно нового
               подхода и почему сейчас он в тренде, рассказал на конференции{" "}
             </p>
-            <button>Купить мастер-класс за 46 $ </button>
+            <button onClick={() => nav.push("/poslePodpiski")}>
+              Купить мастер-класс за 46 ${" "}
+            </button>
           </div>
           <div className={scss.right}>
             <h2>
