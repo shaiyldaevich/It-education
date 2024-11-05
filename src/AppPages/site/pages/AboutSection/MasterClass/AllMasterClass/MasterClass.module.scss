@@ -1,5 +1,6 @@
 .MasterClass {
-  padding: 100px 0;
+  padding: 150px 0;
+
   .content {
     display: flex;
     align-items: center;
@@ -19,6 +20,7 @@
       flex-direction: column;
       gap: 50px;
       .card {
+        cursor: pointer;
         display: flex;
         align-items: start;
         justify-content: center;

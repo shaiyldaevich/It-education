@@ -1,5 +1,8 @@
+"use client";
 import React from "react";
 import scss from "./MasterClass.module.scss";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
 const Master = [
   {
     title: "Реактивное программирование на Java: как, зачем и стоит ли? ",
@@ -34,21 +37,34 @@ const Master = [
   },
 ];
 const MasterClass = () => {
+  const nav = useRouter();
   return (
     <section className={scss.MasterClass}>
       <div className="container">
+        <Link className={scss.homeNav} href={"/"}>
+          Главная/
+        </Link>
+
+        <Link className={scss.nav} href={"/allMasterClass"}>
+          Мастер классы
+        </Link>
         <div className={scss.content}>
           <h1>Мастер-классы</h1>
           <div className={scss.cards}>
             {Master.map((item, index) => (
-              <div key={index} className={scss.card}>
+              <div
+                key={index}
+                className={scss.card}
+                onClick={() =>
+                  nav.push(`/allMasterClass/${item.description.slice(0, 30)}`)
+                }
+              >
                 <h2>{item.title}</h2>
                 <p>{item.description}</p>
               </div>
             ))}
           </div>
-          <div className={scss.buttons}>
-          </div>
+          <div className={scss.buttons}></div>
         </div>
       </div>
     </section>
