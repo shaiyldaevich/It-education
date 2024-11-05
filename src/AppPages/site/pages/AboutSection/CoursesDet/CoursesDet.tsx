@@ -10,6 +10,8 @@ import AboutUsSLider from "../../AboutUsSection/AboutUsSLider/AboutUsSLider";
 import WhoMasterClass from "../MasterClass/DetMasterClass/WhoMove/WhoMasterClass";
 import ProgramMasterClass from "../MasterClass/DetMasterClass/Program/ProgramMasterClass";
 import AboutCourseDet from "./CoursesDetSections/AboutCourseDet/AboutCourseDet";
+import CourseProgramm from "./CoursesDetSections/CourseProgramm/CourseProgramm";
+import Faq from "../MasterClass/DetMasterClass/Faq/Faq";
 
 const CoursesDet = () => {
     const params = useParams();
@@ -130,8 +132,9 @@ const CoursesDet = () => {
             <CourseInfo />
             <AboutCourseDet />
             <AboutUsSLider />
-            <ProgramMasterClass />
+            <CourseProgramm />
             <WhoMasterClass />
+            <Faq />
         </div>
     );
 };

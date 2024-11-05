@@ -1,2 +1,135 @@
 .AboutCourseDet {
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 60px;
+        .advantages {
+            display: flex;
+
+            flex-direction: column;
+            gap: 60px;
+            .advantagesTitle {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                .forWho {
+                    font-size: 20px;
+                    color: white;
+                    font-weight: 600;
+                    line-height: 24.38px;
+                    text-align: left;
+                }
+                .forWhoText {
+                    color: white;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 24.38px;
+                    text-align: left;
+                }
+            }
+            .uLearn {
+                display: flex;
+                flex-direction: column;
+
+                gap: 20px;
+                align-items: flex-start;
+                .uLearnBlock {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 10px 100px;
+                    .uLearnText {
+                        color: white;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 24.38px;
+                        text-align: left;
+                    }
+                }
+                .uLearnTitle {
+                    font-size: 20px;
+                    color: white;
+                    font-weight: 600;
+                    line-height: 24.38px;
+                    text-align: left;
+                }
+            }
+        }
+        .results {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            .resultsTitle {
+                color: white;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 24.38px;
+                text-align: left;
+            }
+            .resultsBlock {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+                .resultsText {
+                    color: white;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 24.38px;
+                    text-align: left;
+                }
+            }
+        }
+        .actions {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 60px;
+            .actionsText {
+                color: white;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 24.38px;
+                text-align: left;
+            }
+            .buttons {
+                display: flex;
+                flex-direction: row;
+                gap: 60px;
+                .buy {
+                    font-size: 16px;
+                    font-weight: 500;
+                    border: 2px solid rgba(4, 64, 118, 1);
+                    line-height: 19.5px;
+                    text-align: left;
+                    padding: 25px 120px;
+                    border-radius: 10px;
+                    color: white;
+                    background: rgb(2, 56, 103);
+                    transition: 300ms;
+                    &:hover {
+                        transform: translateY(-3px);
+                        background: rgb(9, 81, 144);
+                    }
+                }
+                .check {
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 19.5px;
+                    text-align: left;
+                    border: 2px solid rgba(4, 64, 118, 1);
+                    padding: 25px 120px;
+                    border-radius: 10px;
+                    color: white;
+                    background: rgb(1, 10, 32);
+                    transition: 300ms;
+                    &:hover {
+                        transform: translateY(-3px);
+                        background: rgb(2, 34, 62);
+                    }
+                }
+            }
+        }
+    }
 }
