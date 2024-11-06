@@ -5,7 +5,6 @@ import Image from "next/image";
 import img1 from "../../../../../assets/aboutUa1.png";
 import img2 from "../../../../../assets/aboutUa2.png";
 import img3 from "../../../../../assets/sertificat.png";
-import Link from "next/link";
 
 const AboutUsInfoText = () => {
     const aboutUs = [
@@ -18,60 +17,6 @@ const AboutUsInfoText = () => {
         },
     ];
 
-<<<<<<< HEAD
-  const aboutUs2 = [
-    {
-      name: "Сертификат",
-      descr: "По окончании обучения выдается онлайн сертификат.",
-      img3: img3,
-    },
-  ];
-  return (
-    <div className={styles.InfoAboutus}>
-      <div className="container">
-        <div className={styles.mainInfo}>
-          <div className={styles.breatcrums}>
-            <Typography variant="bodyL" weight="light">
-              <span>
-                {" "}
-                <Link href={"/"}>Главная</Link>{" "}
-              </span>
-              / О нас
-            </Typography>
-          </div>
-          <div className={styles.mainTextInfo}>
-            {aboutUs.map((el, index) => (
-              <div key={index}>
-                <Typography variant="h2" weight="regularM">
-                  {el.name}
-                </Typography>
-                <div className={styles.descr}>
-                  <Typography variant="bodyL" weight="bold">
-                    {el.descr1}
-                  </Typography>
-                  <Typography variant="bodyL" weight="bold">
-                    {el.descr2}
-                  </Typography>
-                </div>
-                <div className={styles.textImg}>
-                  <Image src={img1} alt="img" />
-                  <Image src={img2} alt="img" />
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className={styles.mainSertificat}>
-            {aboutUs2.map((el, index) => (
-              <div key={index}>
-                <Typography variant="h2" weight="regularM">
-                  {el.name}
-                </Typography>
-                <Typography variant="bodyL" weight="bold">
-                  {el.descr}
-                </Typography>
-                <div className={styles.imgSer}>
-                  <Image src={img3} alt="img" />
-=======
     const aboutUs2 = [
         {
             name: "Сертификат",
@@ -120,7 +65,6 @@ const AboutUsInfoText = () => {
                             </div>
                         ))}
                     </div>
->>>>>>> 604be79848ef14e33113c387dc4f59b08f1ed758
                 </div>
             </div>
         </div>
