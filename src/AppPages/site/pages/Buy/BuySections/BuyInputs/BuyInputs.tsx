@@ -1,8 +1,9 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import scss from "./BuyInputs.module.scss";
 import { useParams } from "next/navigation";
+import ModalWindow from "@/UI/ModalWindow/ModalWindow";
 
 const BuyInputs = () => {
     const params = useParams();
@@ -47,11 +48,17 @@ const BuyInputs = () => {
             info: "Креативный специалист, который придумывает дизайн и интерфейс продукта.",
         },
     ];
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => setIsModalOpen(true);
+    const closeModal = () => setIsModalOpen(false);
 
     const selectedCourse = courses.find((course) => course.id === courseId);
 
     return (
         <section className={scss.BuyInputs}>
+            <ModalWindow isOpen={isModalOpen} onClose={closeModal} />
+            <div></div>
             <div className={scss.content}>
                 <div className={scss.nameInput}>
                     <h1 className={scss.inputText}>Ф.И.О*</h1>
@@ -110,7 +117,7 @@ const BuyInputs = () => {
                     </div>
                 </div>
                 <div className={scss.actions}>
-                    <button className={scss.button}>
+                    <button className={scss.button} onClick={openModal}>
                         Оплатить {selectedCourse?.price}.00 $
                     </button>
                     <div className={scss.checkBox}>

@@ -141,11 +141,11 @@ const CoursesDet = () => {
             </div>
             <CourseInfo />
             <AboutCourseDet />
-            <AboutUsSLider />
             <CourseProgramm />
             <LearnProcess />
             <WhoMasterClass />
             <SecondLearnProcess />
+            <AboutUsSLider />
             <Faq />
         </section>
     );
