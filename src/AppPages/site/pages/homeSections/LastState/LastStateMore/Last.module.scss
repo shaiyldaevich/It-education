@@ -1,5 +1,19 @@
 .LastStates {
-  padding: 100px 0;
+  padding: 150px 0;
+  .homeNav {
+    color: rgb(186, 186, 186);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: left;
+  }
+
+  .nav {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: left;
+  }
   .content {
     display: flex;
     align-items: center;
