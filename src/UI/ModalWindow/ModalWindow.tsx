@@ -2,6 +2,7 @@
 import React from "react";
 import styles from "./ModalWindow.module.scss";
 import { useParams } from "next/navigation";
+import { useLanguageStore } from "@/stores/useLanguageStore";
 
 interface ModalWindowProps {
     isOpen: boolean;
@@ -11,6 +12,7 @@ interface ModalWindowProps {
 const ModalWindow: React.FC<ModalWindowProps> = ({ isOpen, onClose }) => {
     const params = useParams();
     const courseId = Number(params?.confirm);
+    const { t } = useLanguageStore();
 
     const courses = [
         {
@@ -62,12 +64,21 @@ const ModalWindow: React.FC<ModalWindowProps> = ({ isOpen, onClose }) => {
     return (
         <div className={styles.main} onClick={handleOverlayClick}>
             <div className={styles.mainModal}>
-                <h1 className={styles.title}>Благодарим за покупку!!!</h1>
+                <h1 className={styles.title}>
+                    {t(
+                        "Сатып алганыңыз үчүн ыраазычылык билдиребиз!!!",
+                        "Благодарим за покупку!!!"
+                    )}
+                </h1>
                 <h1 className={styles.text}>
-                    Теперь вам доступен курс {selectedCourse.name}
+                    {t(
+                        "Эми сизге курс жеткиликтүү.",
+                        "Теперь вам доступен курс"
+                    )}
+                    {selectedCourse.name}
                 </h1>
                 <button type="button" className={styles.btn} onClick={onClose}>
-                    Ок, посмотреть покупку
+                    {t("Ок, сатып алганды көрүү.", "Ок, посмотреть покупку")}
                 </button>
             </div>
         </div>
