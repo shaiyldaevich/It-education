@@ -41,10 +41,10 @@ const Articledet = () => {
         </Link>
 
         <Link className={scss.nav} href={"/article"}>
-          {t("Макалалар", "Статья")}
+          {t("Макалалар /", "Статья /")}
         </Link>
-        <Link className={scss.nav} href={"/article"}>
-          {t("Мы подготовили", "Биз даярдадык")}
+        <Link className={scss.navAb} href={""}>
+          {t("Биз даярдадык", "Мы подготовили")}
         </Link>
         <div className={scss.content}>
           <h1>
