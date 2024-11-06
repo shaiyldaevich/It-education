@@ -1,7 +1,55 @@
+"use client";
+
 import React from "react";
 import scss from "./BuyInputs.module.scss";
+import { useParams } from "next/navigation";
 
 const BuyInputs = () => {
+    const params = useParams();
+    const courseId = Number(params?.confirm);
+
+    const courses = [
+        {
+            id: 1,
+            teacherProfession: "Frontend разработчик",
+
+            access: "навсегда",
+            includes: ["9 модулей"],
+            price: 200,
+            about: "Идея реактивного программирования появилась сравнительно недавно, лет 10 назад. ",
+            teacher: "Евгений Александрович",
+            materials: "60 материалов",
+            name: "Frontend-разработчик",
+            info: "Мастер создания сайтов. Умеет делать их красивыми, интерактивными, с большим функционалом.",
+        },
+        {
+            id: 2,
+            teacherProfession: "Frontend разработчик",
+
+            teacher: "Евгений Александрович",
+            about: "Идея реактивного программирования появилась сравнительно недавно, лет 10 назад. ",
+            includes: ["6 модулей"],
+            access: "месяц",
+            price: 900,
+            materials: "90 материалов",
+            name: "Backend-разработчик",
+            info: "Специалист, который отвечает за построение логики для воплощения любой идеи.",
+        },
+        {
+            id: 3,
+            teacherProfession: "Frontend разработчик",
+            about: "Идея реактивного программирования появилась сравнительно недавно, лет 10 назад. ",
+            teacher: "Евгений Александрович",
+            includes: ["3 модулей", "30 материалов"],
+            price: 40,
+            access: "год",
+            name: "UX / UI Дизайнер",
+            info: "Креативный специалист, который придумывает дизайн и интерфейс продукта.",
+        },
+    ];
+
+    const selectedCourse = courses.find((course) => course.id === courseId);
+
     return (
         <section className={scss.BuyInputs}>
             <div className={scss.content}>
@@ -22,14 +70,61 @@ const BuyInputs = () => {
                     <h1 className={scss.inputText}>E mail*</h1>
                     <input type="email" className={scss.input} />
                 </div>
-                <div className={scss.card}></div>
+                <div className={scss.card}>
+                    {" "}
+                    <h1 className={scss.inputText}>Выберите платежную карту</h1>
+                    <div className={scss.checkBoxes}>
+                        <div className={scss.checkBox}>
+                            <input
+                                type="checkbox"
+                                id="checkbox1"
+                                className={scss.customCheckbox}
+                            />
+                            <label htmlFor="checkbox1"></label>
+                            <h1 className={scss.cardText}>Visa</h1>
+                        </div>
+                        <div className={scss.checkBox}>
+                            <input
+                                type="checkbox"
+                                id="checkbox2"
+                                className={scss.customCheckbox}
+                            />
+                            <label htmlFor="checkbox2"></label>{" "}
+                            <h1 className={scss.cardText}>MasterCard</h1>
+                        </div>{" "}
+                    </div>
+                </div>
                 <div className={scss.cardNumber}>
                     {" "}
                     <h1 className={scss.inputText}>Номер карты *</h1>
                     <input type="number" className={scss.input} />
                 </div>
-                <div className={scss.cardCode}></div>
-                <div className={scss.actions}></div>
+                <div className={scss.cardCode}>
+                    <div className={scss.year}>
+                        <h1 className={scss.inputText}>ММ/ГГ *</h1>{" "}
+                        <input type="number" className={scss.input} />
+                    </div>
+                    <div className={scss.cvc}>
+                        <h1 className={scss.inputText}>CVC *</h1>{" "}
+                        <input type="number" className={scss.input} />
+                    </div>
+                </div>
+                <div className={scss.actions}>
+                    <button className={scss.button}>
+                        Оплатить {selectedCourse?.price}.00 $
+                    </button>
+                    <div className={scss.checkBox}>
+                        <input
+                            type="checkbox"
+                            id="checkbox3"
+                            className={scss.customCheckbox}
+                        />
+                        <label htmlFor="checkbox3"></label>{" "}
+                        <h1 className={scss.text}>
+                            Я ознакомился и согласен с Условиями оказания услуг
+                        </h1>
+                    </div>{" "}
+                </div>
             </div>
         </section>
     );
