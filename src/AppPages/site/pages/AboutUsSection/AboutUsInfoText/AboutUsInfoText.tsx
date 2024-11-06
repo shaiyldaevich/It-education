@@ -78,7 +78,6 @@ const AboutUsInfoText = () => {
             ))}
           </div>
         </div>
-         
       </div>
     </div>
   );
