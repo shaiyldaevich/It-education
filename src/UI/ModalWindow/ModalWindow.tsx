@@ -72,8 +72,8 @@ const ModalWindow: React.FC<ModalWindowProps> = ({ isOpen, onClose }) => {
                 </h1>
                 <h1 className={styles.text}>
                     {t(
-                        "Эми сизге курс жеткиликтүү.",
-                        "Теперь вам доступен курс"
+                        "Эми сизге курс жеткиликтүү ",
+                        "Теперь вам доступен курс "
                     )}
                     {selectedCourse.name}
                 </h1>

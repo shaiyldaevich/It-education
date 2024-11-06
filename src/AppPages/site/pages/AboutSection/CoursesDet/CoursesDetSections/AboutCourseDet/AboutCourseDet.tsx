@@ -3,9 +3,11 @@ import React from "react";
 import scss from "./AboutCourseDet..module.scss";
 import { useParams } from "next/navigation";
 import { Link as Scrollhref } from "react-scroll";
+import { useLanguageStore } from "@/stores/useLanguageStore";
 
 const AboutCourseDet = () => {
     const params = useParams();
+    const { t } = useLanguageStore();
 
     const courseId = Number(params?.course);
 
@@ -72,13 +74,18 @@ const AboutCourseDet = () => {
                 <div className={scss.content}>
                     <div className={scss.advantages}>
                         <div className={scss.advantagesTitle}>
-                            <h1 className={scss.forWho}> Для кого это </h1>
+                            <h1 className={scss.forWho}>
+                                {t("Бул кимге арналган", "Для кого это")}{" "}
+                            </h1>
                             <h1 className={scss.forWhoText}>
                                 ● {selectedCourse?.forWho}
                             </h1>
                         </div>
                         <div className={scss.uLearn}>
-                            <h1 className={scss.uLearnTitle}> Для кого это </h1>
+                            <h1 className={scss.uLearnTitle}>
+                                {" "}
+                                {t("Сиз окуйсуз", "Вы изучтие")}{" "}
+                            </h1>
                             <div className={scss.uLearnBlock}>
                                 {selectedCourse?.uLearn.map((text, index) => (
                                     <h1 key={index} className={scss.uLearnText}>
@@ -90,7 +97,10 @@ const AboutCourseDet = () => {
                     </div>
                     <div className={scss.results}>
                         <h1 className={scss.resultsTitle}>
-                            К каким результатам вас может привести этот курс?
+                            {t(
+                                "Бул курс сизди кайсы жыйынтыктарга алып келиши мүмкүн?",
+                                "К каким результатам вас может привести этот курс?"
+                            )}
                         </h1>
                         <div className={scss.resultsBlock}>
                             {selectedCourse?.results?.map((texts, index) => (
@@ -102,8 +112,10 @@ const AboutCourseDet = () => {
                     </div>
                     <div className={scss.actions}>
                         <h1 className={scss.actionsText}>
-                            Учитесь, применяйте полученные на курсе знания и
-                            будьте счастливы!
+                            {t(
+                                "Окуңуз, курс боюнча алынган билимдерди колдонуп, бактылуу болуңуз!",
+                                "Учитесь, применяйте полученные на курсе знания и будьте счастливы!"
+                            )}{" "}
                         </h1>
                         <div className={scss.buttons}>
                             <Scrollhref
@@ -115,7 +127,7 @@ const AboutCourseDet = () => {
                                 duration={500}
                             >
                                 <button className={scss.buy}>
-                                    Купить курс
+                                    {t("Курс сатып алуу", "Купить курс")}
                                 </button>
                             </Scrollhref>
 
@@ -128,7 +140,10 @@ const AboutCourseDet = () => {
                                 duration={500}
                             >
                                 <button className={scss.check}>
-                                    Смотреть программу
+                                    {t(
+                                        "Программаны көрүү",
+                                        "Смотреть программу"
+                                    )}
                                 </button>
                             </Scrollhref>
                         </div>

@@ -4,10 +4,12 @@ import React, { useState } from "react";
 import scss from "./BuyInputs.module.scss";
 import { useParams } from "next/navigation";
 import ModalWindow from "@/UI/ModalWindow/ModalWindow";
+import { useLanguageStore } from "@/stores/useLanguageStore";
 
 const BuyInputs = () => {
     const params = useParams();
     const courseId = Number(params?.confirm);
+    const { t } = useLanguageStore();
 
     const courses = [
         {
@@ -79,7 +81,12 @@ const BuyInputs = () => {
                 </div>
                 <div className={scss.card}>
                     {" "}
-                    <h1 className={scss.inputText}>Выберите платежную карту</h1>
+                    <h1 className={scss.inputText}>
+                        {t(
+                            "Төлөм картасын тандаңыз",
+                            "Выберите платежную карту"
+                        )}
+                    </h1>
                     <div className={scss.checkBoxes}>
                         <div className={scss.checkBox}>
                             <input
@@ -103,7 +110,9 @@ const BuyInputs = () => {
                 </div>
                 <div className={scss.cardNumber}>
                     {" "}
-                    <h1 className={scss.inputText}>Номер карты *</h1>
+                    <h1 className={scss.inputText}>
+                        {t("Картанын номери *", "Номер карты *")}
+                    </h1>
                     <input type="number" className={scss.input} />
                 </div>
                 <div className={scss.cardCode}>
@@ -118,7 +127,8 @@ const BuyInputs = () => {
                 </div>
                 <div className={scss.actions}>
                     <button className={scss.button} onClick={openModal}>
-                        Оплатить {selectedCourse?.price}.00 $
+                        {t("Төлөм жасоо ", "Оплатить ")}
+                        {selectedCourse?.price}.00 $
                     </button>
                     <div className={scss.checkBox}>
                         <input
@@ -128,7 +138,10 @@ const BuyInputs = () => {
                         />
                         <label htmlFor="checkbox3"></label>{" "}
                         <h1 className={scss.text}>
-                            Я ознакомился и согласен с Условиями оказания услуг
+                            {t(
+                                "Мен кызмат көрсөтүү шарттары менен тааныштым жана макулмун",
+                                "Я ознакомился и согласен с Условиями оказания услуг "
+                            )}
                         </h1>
                     </div>{" "}
                 </div>

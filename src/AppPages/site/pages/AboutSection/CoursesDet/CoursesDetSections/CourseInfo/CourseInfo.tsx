@@ -72,7 +72,9 @@ const CourseInfo = () => {
                         {selectedCourse ? (
                             <div className={scss.course}>
                                 <div className={scss.info}>
-                                    <h1 className={scss.name}>О КУРСЕ</h1>
+                                    <h1 className={scss.name}>
+                                        {t("КУРС ТУУРАЛУУ", "О КУРСЕ")}
+                                    </h1>
                                     <div className={scss.courseDetInfo}>
                                         {selectedCourse.details?.map(
                                             (text, index) => (

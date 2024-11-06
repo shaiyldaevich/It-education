@@ -5,9 +5,12 @@ import scss from "./Buy.module.scss";
 import { useParams } from "next/navigation";
 import Link from "next/link";
 import BuyInputs from "./BuySections/BuyInputs/BuyInputs";
+import { useLanguageStore } from "@/stores/useLanguageStore";
 
 const Buy = () => {
     const params = useParams();
+    const { t } = useLanguageStore();
+
     const courseId = Number(params?.confirm);
 
     const courses = [
@@ -63,19 +66,17 @@ const Buy = () => {
             <div className="container">
                 <div className={scss.content}>
                     <div className={scss.path}>
-                        <Link href={"/"} className={scss.pathText1}>
-                            Главная /
-                        </Link>
+                        <Link href={"/"} className={scss.pathText1}></Link>
                         <Link
                             href={`/confirm/${selectedCourse.id}`}
                             className={scss.pathText2}
                         >
-                            Зарегистрироваться на курс
+                            {t("Курска катталуу", "Зарегистрироваться на курс")}
                         </Link>
                     </div>
                     <div className={scss.forumBlock}>
                         <h1 className={scss.title}>
-                            Зарегистрироваться на курс
+                            {t("Курска катталуу", "Зарегистрироваться на курс")}
                         </h1>
                         <div className={scss.forum}>
                             <div className={scss.info}>
@@ -103,7 +104,7 @@ const Buy = () => {
                                 <div className={scss.access}>
                                     <div className={scss.include}>
                                         <h1 className={scss.courseTitle}>
-                                            В курс входит
+                                            {t("Курска кирет", "В курс входит")}
                                         </h1>
                                         {selectedCourse.includes.map(
                                             (include, index) => (
@@ -118,7 +119,7 @@ const Buy = () => {
                                     </div>
                                     <div className={scss.accessBlock}>
                                         <h1 className={scss.courseTitle}>
-                                            Доступ
+                                            {t("Жеткиликтүүлүк", "Доступ")}
                                         </h1>
                                         <h1 className={scss.includeText}>
                                             {selectedCourse.access}
@@ -128,9 +129,11 @@ const Buy = () => {
                                 <div className={scss.br}></div>
                                 <div className={scss.courseInfo}>
                                     <h1 className={scss.includeText}>
-                                        * - материалы включают уроки, тесты и
-                                        задания. Некоторые материалы могут быть
-                                        недоступны при самостоятельном обучении.{" "}
+                                        {t(
+                                            "Материалдар сабактарды, тесттерди жана тапшырмаларды камтыйт. Кээ бир материалдар өз алдынча окуу учурунда жеткиликсиз болушу мүмкүн.",
+                                            "материалы включают уроки, тесты и задания. Некоторые материалы могут быть недоступны при самостоятельном обучении."
+                                        )}
+                                        * -{" "}
                                     </h1>
                                 </div>
                             </div>
