@@ -16,7 +16,11 @@ const LearnProcess = () => {
             <div className="container">
                 <div className={scss.content}>
                     <div className={scss.block}>
-                        <Image src={img1} alt="photo" />
+                        <Image
+                            className={scss.blockIMG}
+                            src={img1}
+                            alt="photo"
+                        />
                         <h1 className={scss.title}>
                             {t("100 материалдар", "100 материалов")}
                         </h1>
@@ -28,7 +32,11 @@ const LearnProcess = () => {
                         </h1>
                     </div>
                     <div className={scss.block}>
-                        <Image src={img2} alt="photo" />
+                        <Image
+                            className={scss.blockIMG}
+                            src={img2}
+                            alt="photo"
+                        />
                         <h1 className={scss.title}>
                             {t("100% эксклюзивдүү", "100% эксклюзив")}
                         </h1>{" "}
@@ -40,7 +48,11 @@ const LearnProcess = () => {
                         </h1>
                     </div>
                     <div className={scss.block}>
-                        <Image src={img3} alt="photo" />
+                        <Image
+                            className={scss.blockIMG}
+                            src={img3}
+                            alt="photo"
+                        />
                         <h1 className={scss.title}>
                             {t(
                                 "Ар кандай учурда, каалаган жерде.",
@@ -49,7 +61,7 @@ const LearnProcess = () => {
                         </h1>
                         <h1 className={scss.text}>
                             {t(
-                                "Өзүңүзгө ыңгайлуу учурда жана каалаган жерде, мобилдик телефонуңузда же компьютериңизде иштеңиз",
+                                "Өзүңүзгө ы1гайлуу учурда жана каалаган жерде, мобилдик телефонуңузда же компьютериңизде иштеңиз",
                                 "Занимайтесь как вам удобно и где угодно, на своем мобильном или компьютере"
                             )}{" "}
                         </h1>

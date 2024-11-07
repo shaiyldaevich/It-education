@@ -14,16 +14,78 @@
         align-items: center;
         justify-content: center;
         .title {
+            margin: 0;
+            padding: 10px 0;
             font-size: 20px;
             font-weight: 700;
             line-height: 24.38px;
             text-align: left;
         }
         .text {
+            margin: 0;
             font-size: 20px;
             font-weight: 400;
             line-height: 24.38px;
             text-align: center;
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .LearnProcess {
+        padding: 100px 0;
+        .block {
+            gap: 10px;
+            .title {
+                font-size: 18px;
+            }
+            .text {
+                font-size: 16px;
+            }
+            .blockIMG {
+                width: 90px;
+                height: 85px;
+            }
+        }
+    }
+}
+
+@media (max-width: 630px) {
+    .LearnProcess {
+        .content {
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .block:nth-child(odd) {
+            margin-right: auto;
+        }
+        .block {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 50%;
+            justify-content: center;
+            .title {
+                margin: 0;
+                padding: 10px 0;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24.38px;
+                text-align: center;
+            }
+            .text {
+                margin: 0;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24.38px;
+                text-align: center;
+            }
+            .blockIMG {
+                width: 80px;
+                height: 75px;
+            }
         }
     }
 }

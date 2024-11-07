@@ -133,3 +133,245 @@
         }
     }
 }
+
+@media (max-width: 1180px) {
+    .AboutCourseDet {
+        .content {
+            gap: 40px;
+            .advantages {
+                gap: 40px;
+                .advantagesTitle {
+                    .forWho {
+                        font-size: 18px;
+                    }
+                    .forWhoText {
+                        font-size: 18px;
+                    }
+                }
+                .uLearn {
+                    gap: 10px;
+                    .uLearnBlock {
+                        gap: 10px 80px;
+                        .uLearnText {
+                            font-size: 18px;
+                        }
+                    }
+                    .uLearnTitle {
+                        font-size: 18px;
+                    }
+                }
+            }
+            .results {
+                gap: 10px;
+                .resultsTitle {
+                    font-size: 18px;
+                }
+                .resultsBlock {
+                    .resultsText {
+                        font-size: 18px;
+                    }
+                }
+            }
+            .actions {
+                gap: 40px;
+                .actionsText {
+                    font-size: 18px;
+                }
+                .buttons {
+                    gap: 40px;
+                    .buy {
+                        font-size: 14px;
+                        padding: 20px 90px;
+                    }
+                    .check {
+                        font-size: 14px;
+                        padding: 20px 90px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 880px) {
+    .AboutCourseDet {
+        .content {
+            gap: 20px;
+            .advantages {
+                gap: 20px;
+                .advantagesTitle {
+                    .forWho {
+                        font-size: 16px;
+                    }
+                    .forWhoText {
+                        font-size: 16px;
+                    }
+                }
+                .uLearn {
+                    .uLearnBlock {
+                        gap: 10px 60px;
+                        .uLearnText {
+                            font-size: 16px;
+                        }
+                    }
+                    .uLearnTitle {
+                        font-size: 16px;
+                    }
+                }
+            }
+            .results {
+                .resultsTitle {
+                    font-size: 16px;
+                }
+                .resultsBlock {
+                    .resultsText {
+                        font-size: 16px;
+                    }
+                }
+            }
+            .actions {
+                gap: 20px;
+                .actionsText {
+                    font-size: 16px;
+                }
+                .buttons {
+                    gap: 20px;
+                    .buy {
+                        font-size: 12px;
+                        padding: 15px 70px;
+                    }
+                    .check {
+                        font-size: 12px;
+                        padding: 15px 70px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 630px) {
+    .AboutCourseDet {
+        .content {
+            gap: 30px;
+            .advantages {
+                gap: 30px;
+                .advantagesTitle {
+                    .forWho {
+                        font-size: 18px;
+                    }
+                    .forWhoText {
+                        font-size: 18px;
+                    }
+                }
+                .uLearn {
+                    gap: 10px;
+                    .uLearnBlock {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        .uLearnText {
+                            font-size: 18px;
+                        }
+                    }
+                    .uLearnTitle {
+                        font-size: 18px;
+                    }
+                }
+            }
+            .results {
+                gap: 10px;
+                .resultsTitle {
+                    font-size: 18px;
+                }
+                .resultsBlock {
+                    .resultsText {
+                        font-size: 18px;
+                    }
+                }
+            }
+            .actions {
+                align-items: center;
+                justify-content: center;
+
+                gap: 30px;
+                .actionsText {
+                    text-align: center;
+                    font-size: 18px;
+                }
+                .buttons {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 30px;
+                    .buy {
+                        font-size: 13px;
+                        padding: 25px 110px;
+                    }
+                    .check {
+                        font-size: 13px;
+
+                        padding: 25px 80px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 430px) {
+    .AboutCourseDet {
+        .content {
+            gap: 15px;
+            .advantages {
+                gap: 15px;
+                .advantagesTitle {
+                    .forWho {
+                        font-size: 16px;
+                    }
+                    .forWhoText {
+                        font-size: 16px;
+                    }
+                }
+                .uLearn {
+                    .uLearnBlock {
+                        .uLearnText {
+                            font-size: 16px;
+                        }
+                    }
+                    .uLearnTitle {
+                        font-size: 16px;
+                    }
+                }
+            }
+            .results {
+                .resultsTitle {
+                    font-size: 16px;
+                }
+                .resultsBlock {
+                    .resultsText {
+                        font-size: 16px;
+                    }
+                }
+            }
+            .actions {
+                gap: 15px;
+                .actionsText {
+                    font-size: 16px;
+                }
+                .buttons {
+                    gap: 15px;
+                    .buy {
+                        font-size: 13px;
+                        padding: 20px 90px;
+                    }
+                    .check {
+                        font-size: 13px;
+
+                        padding: 20px 60px;
+                    }
+                }
+            }
+        }
+    }
+}

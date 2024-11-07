@@ -1,6 +1,7 @@
 .name {
     color: black;
-
+    margin: 0;
+    padding: 10px 0;
     font-size: 24px;
     font-weight: 700;
     line-height: 29.26px;
@@ -76,6 +77,7 @@
 .info {
     color: black;
     font-size: 16px;
+    margin: 0;
     font-weight: 400;
     line-height: 19.5px;
     text-align: left;
@@ -89,6 +91,7 @@
 }
 
 .link {
+    margin: 0;
     cursor: pointer;
     color: black;
 
@@ -275,7 +278,7 @@
     }
 
     .content {
-        gap: 45px;
+        gap: 25px;
     }
 
     .info {
@@ -286,7 +289,7 @@
     }
 
     .infoBlock {
-        gap: 25px;
+        gap: 15px;
     }
     .title {
         font-size: 35px;

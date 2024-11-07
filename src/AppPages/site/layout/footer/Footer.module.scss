@@ -39,6 +39,7 @@
     justify-content: flex-start;
     font-size: 16px;
     font-weight: 400;
+    margin: 0;
     line-height: 19.5px;
     text-align: center;
 }
@@ -119,6 +120,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
+
     justify-content: center;
 }
 
@@ -689,74 +691,7 @@
     }
 }
 
-@media (max-width: 550px) {
-    .address {
-        gap: 7px;
-    }
-    .addressTitle {
-        font-size: 17px;
-    }
-    .addresses {
-        gap: 7px;
-    }
-    .info {
-        gap: 7px;
-        font-size: 13px;
-    }
-
-    .contacts {
-        gap: 17px;
-    }
-    .contactsTitle {
-        font-size: 17px;
-    }
-    .contactsInfo {
-        gap: 7px;
-    }
-    .info {
-        gap: 7px;
-        font-size: 13px;
-    }
-    .socialMedia {
-        gap: 17px;
-    }
-    .socialMediaTitle {
-        font-size: 17px;
-    }
-    .socialMediaLinks {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        align-items: center;
-        gap: 12px;
-    }
-    .socialMediaLink {
-        width: 30px;
-        height: 30px;
-    }
-    .navsBlock {
-        gap: 17px;
-    }
-    .navsTitle {
-        font-size: 17px;
-    }
-    .navs {
-        gap: 8px;
-    }
-    .nav {
-        font-size: 12px;
-    }
-    .logoBlock {
-        gap: 25px;
-    }
-    .buttonKG {
-        padding: 3px;
-    }
-    .buttonRU {
-        padding: 3px;
-    }
-}
-
-@media (max-width: 500px) {
+@media (max-width: 630px) {
     .content {
         grid-template-columns: 1fr;
         gap: 40px;

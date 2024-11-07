@@ -5,8 +5,11 @@ import scss from "./SignUpPage.module.scss";
 import Image from "next/image";
 import logo from "../../../../assets/логотип.png";
 import eye from "../../../../assets/eye.png";
+import { useLanguageStore } from "@/stores/useLanguageStore";
 
 const SignUpPage = () => {
+    const { t } = useLanguageStore();
+
     const [showPassword, setShowPassword] = useState(false);
 
     const togglePasswordVisibility = () => {
@@ -38,13 +41,22 @@ const SignUpPage = () => {
                                 className={scss.passButton}
                                 onClick={togglePasswordVisibility}
                             >
-                                <Image src={eye} alt="eye" />
+                                <Image
+                                    className={scss.hideButton}
+                                    src={eye}
+                                    alt="eye"
+                                />
                             </button>
                         </div>{" "}
                     </div>
                     <div className={scss.actions}>
-                        <button className={scss.button}> Войти</button>
-                        <h1 className={scss.buttonText}>Забыли пароль?</h1>
+                        <button className={scss.button}>
+                            {" "}
+                            {t("Кирүү", "Войти")}
+                        </button>
+                        <h1 className={scss.buttonText}>
+                            {t("Паролду унуттуңузбу?", "Забыли пароль?")}
+                        </h1>
                     </div>
                 </div>
             </div>

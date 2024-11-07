@@ -64,6 +64,14 @@
                 .passButton {
                     background: none;
                     border: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .hideButton {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
                 }
                 .editedInput {
                     font-size: 20px;
@@ -92,7 +100,12 @@
                     text-align: left;
                     color: white;
                     border-radius: 10px;
+                    transition: 300ms;
                     background: rgba(3, 64, 120, 1);
+                    &:hover {
+                        transform: translateX(3px);
+                        background: rgb(0, 77, 150);
+                    }
                 }
                 .buttonText {
                     color: white;
@@ -100,10 +113,151 @@
                     font-weight: 500;
                     line-height: 19.5px;
                     text-align: left;
+                    cursor: pointer;
 
                     text-decoration: underline;
                 }
             }
         }
     }
+}
+
+@media (max-width: 1080px) {
+    .SignUpPage {
+        .content {
+            gap: 30px;
+            .logo {
+                width: 150px;
+                height: 86px;
+            }
+            .forum {
+                width: 380px;
+                .inputBlock {
+                    .text {
+                        font-size: 14px;
+                    }
+                    .input {
+                        font-size: 18px;
+                        padding: 18px 13px;
+                    }
+                    .passwordInput {
+                        font-size: 18px;
+                    }
+
+                    .editedInput {
+                        font-size: 18px;
+                        padding: 18px 13px;
+                    }
+                }
+                .actions {
+                    .button {
+                        padding: 13px 70px;
+                        font-size: 14px;
+                    }
+                    .buttonText {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 630px) {
+    .SignUpPage {
+        .content {
+            .logo {
+                width: 120px;
+                height: 76px;
+            }
+            .forum {
+                gap: 15px;
+                width: 350px;
+                .inputBlock {
+                    .text {
+                        font-size: 16px;
+                    }
+                    .input {
+                        font-size: 16px;
+
+                        border-radius: 8px;
+                        padding: 12px 15px;
+                        &:hover {
+                            border: 2px solid rgb(255, 255, 255);
+                        }
+                    }
+                    .passwordInput {
+                        font-size: 16px;
+                        border-radius: 8px;
+                    }
+                    .editedInput {
+                        font-size: 20px;
+                        padding: 10px 15px;
+                    }
+                }
+                .actions {
+                    gap: 10px;
+                    flex-direction: column;
+                    .button {
+                        padding: 12px 120px;
+                        font-size: 16px;
+                    }
+                    .buttonText {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .SignUpPage {
+        .content {
+            .logo {
+                width: 110px;
+                height: 66px;
+            }
+            .forum {
+                gap: 15px;
+                width: 300px;
+                .inputBlock {
+                    .text {
+                        font-size: 14px;
+                    }
+                    .input {
+                        font-size: 14px;
+                    }
+                    .passwordInput {
+                        font-size: 14px;
+                    }
+                    .editedInput {
+                        font-size: 18px;
+                        padding: 10px 15px;
+                    }
+                }
+                .actions {
+                    flex-direction: column;
+                    .button {
+                        padding: 12px 90px;
+                        font-size: 14px;
+                    }
+                    .buttonText {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    /* styles */
+}
+
+@media (max-width: 400px) {
+    /* styles */
+}
+
+@media (max-width: 380px) {
+    /* styles */
 }
