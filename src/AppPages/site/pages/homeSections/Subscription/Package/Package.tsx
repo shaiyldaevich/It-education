@@ -41,7 +41,7 @@ const Package = () => {
             <div className="container">
                 <div className={scss.content}>
                     <div className={scss.path}>
-                        <Link className={scss.homeNav} href={"/"}>
+                        <Link className={scss.homeNav} href={"/HomePage"}>
                             {t("Башкы бет", "Главная")} /{" "}
                         </Link>
                         <Link className={scss.nav} href={"/Package"}>

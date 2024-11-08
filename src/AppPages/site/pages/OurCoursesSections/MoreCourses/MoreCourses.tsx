@@ -77,7 +77,7 @@ const MoreCourses = () => {
             <div className="container">
                 <div className={scss.content}>
                     <div className={scss.path}>
-                        <Link className={scss.nav} href={"/"}>
+                        <Link className={scss.nav} href={"/HomePage"}>
                             {t("Башкы /", "Главная /")}
                         </Link>
                         <Link href={"/MoreCourses"}>

@@ -6,6 +6,7 @@ import Image from "next/image";
 import logo from "../../../../assets/логотип.png";
 import eye from "../../../../assets/eye.png";
 import { useLanguageStore } from "@/stores/useLanguageStore";
+import Link from "next/link";
 
 const SignUpPage = () => {
     const { t } = useLanguageStore();
@@ -50,10 +51,10 @@ const SignUpPage = () => {
                         </div>{" "}
                     </div>
                     <div className={scss.actions}>
-                        <button className={scss.button}>
+                        <Link href={"/auth/SignInPage"} className={scss.button}>
                             {" "}
                             {t("Кирүү", "Войти")}
-                        </button>
+                        </Link>
                         <h1 className={scss.buttonText}>
                             {t("Паролду унуттуңузбу?", "Забыли пароль?")}
                         </h1>

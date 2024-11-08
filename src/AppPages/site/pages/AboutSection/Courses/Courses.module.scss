@@ -39,6 +39,9 @@
     align-items: center;
     gap: 20px;
 }
+.action {
+    padding: 20px 0 0 0;
+}
 
 .infoBlock {
     display: flex;
@@ -68,7 +71,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 60px;
+    gap: 40px;
 }
 
 .courses {
