@@ -60,7 +60,6 @@ const BuyInputs = () => {
     return (
         <section className={scss.BuyInputs}>
             <ModalWindow isOpen={isModalOpen} onClose={closeModal} />
-            <div></div>
             <div className={scss.content}>
                 <div className={scss.nameInput}>
                     <h1 className={scss.inputText}>Ф.И.О*</h1>

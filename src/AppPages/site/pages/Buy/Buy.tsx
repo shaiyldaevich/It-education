@@ -66,7 +66,9 @@ const Buy = () => {
             <div className="container">
                 <div className={scss.content}>
                     <div className={scss.path}>
-                        <Link href={"/"} className={scss.pathText1}></Link>
+                        <Link href={"/HomePage"} className={scss.pathText1}>
+                            {t("Башкы /", "Главная /")}
+                        </Link>
                         <Link
                             href={`/confirm/${selectedCourse.id}`}
                             className={scss.pathText2}

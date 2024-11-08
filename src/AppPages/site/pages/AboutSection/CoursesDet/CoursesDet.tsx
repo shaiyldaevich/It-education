@@ -61,7 +61,7 @@ const CoursesDet = () => {
             <div className="container">
                 <div className={scss.content}>
                     <div className={scss.path}>
-                        <Link className={scss.navPath} href={"/"}>
+                        <Link className={scss.navPath} href={"/HomePage"}>
                             {t("Башкы /", "Главная /")}
                         </Link>
                         <Link className={scss.navPath} href={"/MoreCourses"}>

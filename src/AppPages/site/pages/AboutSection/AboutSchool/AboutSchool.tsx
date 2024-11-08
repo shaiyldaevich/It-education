@@ -13,7 +13,7 @@ const AboutSchool = () => {
         <section className={scss.AboutSchool}>
             <div className="container">
                 <div className={scss.path}>
-                    <Link className={scss.homeNav} href={"/"}>
+                    <Link className={scss.homeNav} href={"/HomePage"}>
                         {t("Башкы /", "Главная /")}
                     </Link>
 

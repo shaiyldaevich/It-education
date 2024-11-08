@@ -26,7 +26,7 @@ const Header = () => {
         <header className={scss.Header}>
             <div className="container">
                 <div className={scss.content}>
-                    <Link href={"/"}>
+                    <Link href={"/HomePage"}>
                         <Image className={scss.logo} src={logo} alt="logo" />
                     </Link>
 
@@ -51,7 +51,10 @@ const Header = () => {
                                     >
                                         {t("Биздин курстар", "Наши курсы")}
                                     </Link>
-                                    <Link href={"/aboutUs"} className={scss.nav}>
+                                    <Link
+                                        href={"/aboutUs"}
+                                        className={scss.nav}
+                                    >
                                         {t("Биз жөнүндө", "О нас")}
                                     </Link>
                                 </div>
