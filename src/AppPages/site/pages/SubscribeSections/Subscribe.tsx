@@ -1,15 +1,22 @@
 "use client";
 
 import { useLanguageStore } from "@/stores/useLanguageStore";
-import React from "react";
+import React, { useState } from "react";
 import scss from "./Subscribe.module.scss";
 import Link from "next/link";
+import ModalWindow from "@/UI/ModalWindow/ModalWindow";
 
 const Subscribe = () => {
     const { t } = useLanguageStore();
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => setIsModalOpen(true);
+    const closeModal = () => setIsModalOpen(false);
 
     return (
         <section className={scss.Subscribe}>
+            <ModalWindow isOpen={isModalOpen} onClose={closeModal} />
+
             <div className={scss.content}>
                 <div className={scss.path}>
                     <Link href={"/HomePage"} className={scss.pathText1}>
@@ -84,7 +91,7 @@ const Subscribe = () => {
                     </div>
                 </div>
                 <div className={scss.actions}>
-                    <button className={scss.button}>
+                    <button className={scss.button} onClick={openModal}>
                         {t("Төлөм жасоо ", "Оплатить ")}
                         200.00 $
                     </button>

@@ -23,7 +23,7 @@ const Subscription = () => {
                     </div>
                     <div className={scss.actions}>
                         <button className={scss.button}>
-                            {t("Жазылууну расмийләштирүү", "Оформить подписку")}
+                            {t("Жазылууну расмийлештирүү", "Оформить подписку")}
                         </button>
                         <Link href={"/Package"} className={scss.buttonText}>
                             {t(
