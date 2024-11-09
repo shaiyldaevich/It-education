@@ -1,5 +1,17 @@
 .DetMasterClass {
   padding: 150px 0;
+  @media (max-width: 767px) {
+    padding: 100px 0;
+    .homeNav {
+      display: none;
+    }
+    .nav {
+      display: none;
+    }
+    .navAb {
+      display: none;
+    }
+  }
   .homeNav {
     color: rgb(175, 172, 172);
     margin-right: 5px !important;
