@@ -16,7 +16,6 @@ const AboutSchool = () => {
                     <Link className={scss.homeNav} href={"/HomePage"}>
                         {t("Башкы /", "Главная /")}
                     </Link>
-
                     <Link className={scss.nav} href={"/AboutSchool"}>
                         {t("Мектеп тууралуу", "О школе")}
                     </Link>
