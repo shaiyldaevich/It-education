@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import styles from "./AboutUsInfoText.module.scss";
 import { Typography } from "@/UI/Typography/Typography";
@@ -6,6 +8,7 @@ import img1 from "../../../../../assets/aboutUa1.png";
 import img2 from "../../../../../assets/aboutUa2.png";
 import img3 from "../../../../../assets/sertificat.png";
 import Link from "next/link";
+import { useLanguageStore } from "@/stores/useLanguageStore";
 
 const AboutUsInfoText = () => {
     const aboutUs = [
@@ -25,6 +28,7 @@ const AboutUsInfoText = () => {
             img3: img3,
         },
     ];
+    const { t } = useLanguageStore();
 
     return (
         <div className={styles.InfoAboutus}>
@@ -33,9 +37,11 @@ const AboutUsInfoText = () => {
                     <div className={styles.breatcrums}>
                         <Typography variant="bodyL" weight="light">
                             <span>
-                                <Link href={"/HomePage"}>Главная</Link>
+                                <Link href={"/HomePage"}>
+                                    {t("Башкы бет", "Главная")}
+                                </Link>
                             </span>
-                            / О нас
+                            {t("/ Биз жөнүндө", "/ О нас")}
                         </Typography>
                     </div>
                     <div className={styles.mainTextInfo}>
