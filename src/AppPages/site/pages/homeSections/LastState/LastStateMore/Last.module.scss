@@ -1,5 +1,15 @@
 .LastStates {
   padding: 100px 0;
+  @media (max-width: 767px) {
+    padding: 100px 0;
+    .homeNav {
+      display: none;
+    }
+    .nav {
+      display: none;
+    }
+    
+  }
   .content {
     display: flex;
     align-items: center;
