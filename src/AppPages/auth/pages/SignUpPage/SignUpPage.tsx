@@ -50,14 +50,19 @@ const SignUpPage = () => {
                             </button>
                         </div>{" "}
                     </div>
-                    <div className={scss.actions}>
-                        <Link href={"/auth/SignInPage"} className={scss.button}>
-                            {" "}
-                            {t("Кирүү", "Войти")}
+                    <div className={scss.buttons}>
+                        <div className={scss.actions}>
+                            <Link href={"/HomePage"} className={scss.button}>
+                                {" "}
+                                {t("Кирүү", "Войти")}
+                            </Link>
+                            <h1 className={scss.buttonText}>
+                                {t("Паролду унуттуңузбу?", "Забыли пароль?")}
+                            </h1>
+                        </div>
+                        <Link className={scss.create} href={"/auth/SignInPage"}>
+                            Создать аккаунт
                         </Link>
-                        <h1 className={scss.buttonText}>
-                            {t("Паролду унуттуңузбу?", "Забыли пароль?")}
-                        </h1>
                     </div>
                 </div>
             </div>
