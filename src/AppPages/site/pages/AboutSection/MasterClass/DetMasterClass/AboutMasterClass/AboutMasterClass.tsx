@@ -5,7 +5,7 @@ import { Link as Scrollhref } from "react-scroll";
 import { useLanguageStore } from "@/stores/useLanguageStore";
 
 const AboutMasterClass = () => {
-    const { t } = useLanguageStore(); // Хук для получения функции перевода
+    const { t } = useLanguageStore(); 
 
     return (
         <div className={scss.AboutMasterClass}>
