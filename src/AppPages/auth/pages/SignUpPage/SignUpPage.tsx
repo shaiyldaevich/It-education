@@ -7,7 +7,6 @@ import logo from "../../../../assets/логотип.png";
 import eye from "../../../../assets/eye.png";
 import { useLanguageStore } from "@/stores/useLanguageStore";
 import Link from "next/link";
-
 const SignUpPage = () => {
     const { t } = useLanguageStore();
 

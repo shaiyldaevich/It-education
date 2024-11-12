@@ -13,7 +13,7 @@ const AboutSchoolPage = () => {
             <Courses />
             <MasterClass />
             <LevelOf />
-            <ShoolSlider/>
+            <ShoolSlider />
             <Request />
         </div>
     );
