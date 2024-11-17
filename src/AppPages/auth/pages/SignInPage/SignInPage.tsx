@@ -13,6 +13,9 @@ const SignInPage = () => {
     const handleSignIn = () => {
         nav.push("/HomePage");
     };
+    const handleSignUp = () => {
+        nav.push("/auth/SignUpPage");
+    };
 
     return (
         <section className={scss.SignInPage}>
@@ -47,7 +50,7 @@ const SignInPage = () => {
                                 </button>
                                 <button
                                     className={scss.buttonSec}
-                                    onClick={handleSignIn}
+                                    onClick={handleSignUp}
                                 >
                                     {t(
                                         "Сиздин аккаунтыңыз барбы?",
