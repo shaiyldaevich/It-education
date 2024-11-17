@@ -60,7 +60,10 @@ const SignUpPage = () => {
                             </h1>
                         </div>
                         <Link className={scss.create} href={"/auth/SignInPage"}>
-                            Создать аккаунт
+                            {t(
+                                "Сиздин аккаунтыңыз жокпу?",
+                                "У вас нет аккаунта?"
+                            )}
                         </Link>
                     </div>
                 </div>

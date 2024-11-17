@@ -61,7 +61,7 @@ const Header = () => {
                             </div>
                             <div className={scss.auth}>
                                 <Link
-                                    href={"auth/SignUpPage"}
+                                    href={"/auth/SignUpPage"}
                                     className={scss.signUp}
                                 >
                                     {t("Кирүү", "Войти")}
