@@ -255,20 +255,41 @@
                 }
             }
             .actions {
-                .button {
-                    width: 100%;
-                    border: none;
-                    border-radius: 10px;
-                    color: white;
-                    font-size: 24px;
-                    font-weight: 400;
-                    line-height: 29.26px;
-                    text-align: center;
-                    transition: 300ms;
-                    padding: 25px;
-                    background: rgba(4, 67, 123, 1);
-                    &:hover {
-                        background: rgb(6, 57, 102);
+                .buttons {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 15px;
+                    .button {
+                        width: 100%;
+                        border: none;
+                        border-radius: 10px;
+                        color: white;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 15.26px;
+                        text-align: center;
+                        transition: 300ms;
+                        padding: 12px;
+                        background: rgba(4, 67, 123, 1);
+                        &:hover {
+                            background: rgb(6, 57, 102);
+                        }
+                    }
+                    .buttonSec {
+                        width: 50%;
+                        border: 2px solid gray;
+                        border-radius: 10px;
+                        color: white;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 20.26px;
+                        text-align: center;
+                        transition: 300ms;
+                        padding: 12px;
+                        background: transparent;
+                        &:hover {
+                            background: rgb(32, 32, 32);
+                        }
                     }
                 }
                 .checkBox {
@@ -442,9 +463,18 @@
                     }
                 }
                 .actions {
-                    .button {
-                        font-size: 20px;
-                        padding: 16px;
+                    .buttons {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 15px;
+                        .button {
+                            font-size: 18px;
+                            padding: 11px;
+                        }
+                        .buttonSec {
+                            font-size: 18px;
+                            padding: 11px;
+                        }
                     }
                     .checkBox {
                         padding: 0 10px;
@@ -571,9 +601,18 @@
                     }
                 }
                 .actions {
-                    .button {
-                        font-size: 18px;
-                        padding: 14px;
+                    .buttons {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 15px;
+                        .button {
+                            font-size: 17px;
+                            padding: 10px;
+                        }
+                        .buttonSec {
+                            font-size: 17px;
+                            padding: 10px;
+                        }
                     }
                     .checkBox {
                         padding: 0 8px;
@@ -700,9 +739,21 @@
                     }
                 }
                 .actions {
-                    .button {
-                        font-size: 16px;
-                        padding: 12px;
+                    .buttons {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 10px;
+                        .button {
+                            font-size: 15px;
+                            line-height: 15.26px;
+
+                            padding: 9px;
+                        }
+                        .buttonSec {
+                            font-size: 15px;
+                            line-height: 15.26px;
+                            padding: 9px;
+                        }
                     }
                     .checkBox {
                         padding: 0 6px;
@@ -830,9 +881,21 @@
                     }
                 }
                 .actions {
-                    .button {
-                        font-size: 18px;
-                        padding: 14px;
+                    .buttons {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        .button {
+                            font-size: 18px;
+                            line-height: 15.26px;
+                            padding: 18px;
+                        }
+                        .buttonSec {
+                            width: 100%;
+                            font-size: 18px;
+                            line-height: 15.26px;
+                            padding: 18px;
+                        }
                     }
                     .checkBox {
                         padding: 0 8px;
@@ -960,9 +1023,16 @@
                     }
                 }
                 .actions {
-                    .button {
-                        font-size: 16px;
-                        padding: 12px;
+                    .buttons {
+                        gap: 8px;
+                        .button {
+                            font-size: 17px;
+                            padding: 17px;
+                        }
+                        .buttonSec {
+                            font-size: 17px;
+                            padding: 17px;
+                        }
                     }
                     .checkBox {
                         padding: 0 6px;
