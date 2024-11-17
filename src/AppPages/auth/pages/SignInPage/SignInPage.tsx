@@ -44,6 +44,15 @@ const SignInPage = () => {
                             >
                                 {t("Катталуу", "Зарегистрироватся")}
                             </button>
+                            <button
+                                className={scss.buttonSec}
+                                onClick={handleSignIn}
+                            >
+                                {t(
+                                    "Сиздин аккаунтыңыз барбы?",
+                                    "у вас уже есть аккаунт?"
+                                )}
+                            </button>
                             <div className={scss.checkBox}>
                                 <input
                                     type="checkbox"
