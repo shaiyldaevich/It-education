@@ -1,170 +1,209 @@
 #Reactivity {
-    padding: 50px;
-    padding-top: 100px;
-  
-    .reactivity {
+  padding: 50px;
+  padding-top: 100px;
+
+  .reactivity {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    .reactive_text {
+      @media (max-width: 767px) {
+        p {
+          display: none;
+        }
+      }
+      p {
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        span {
+          color: #9099a3;
+        }
+      }
+    }
+
+    .react_block {
       display: flex;
-      flex-direction: column;
-      gap: 50px;
-      .reactive_text {
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 980px;
+      width: 100%;
+      .react_box {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        h1 {
+          font-family: Montserrat;
+          font-size: clamp(30px, 4vw, 36px);
+          font-weight: 700;
+          line-height: 43.88px;
+          color: #ffffff;
+        }
         p {
           font-family: Poppins;
           font-size: 16px;
           font-weight: 400;
           line-height: 24px;
+          width: 435px;
+          color: #ffffff;
+        }
+      }
+      .react_box2 {
+        display: flex;
+        gap: 20px;
+
+        h3 {
+          font-family: Poppins;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 24px;
           span {
-            color: #9099a3;
-          }
-        }
-      }
-  
-      .react_block {
-        display: flex;
-        justify-content: space-between;
-        width: 980px;
-        .react_box {
-          display: flex;
-          flex-direction: column;
-          gap: 20px;
-          h1 {
-            font-family: Montserrat;
-            font-size: 36px;
-            font-weight: 700;
-            line-height: 43.88px;
-          }
-          p {
             font-family: Poppins;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 400;
-            line-height: 24px;
-            width: 435px;
+            line-height: 21px;
           }
-        }
-        .react_box2 {
-          display: flex;
-          gap: 20px;
-  
-          h3 {
-            font-family: Poppins;
-            font-size: 16px;
-            font-weight: 700;
-            line-height: 24px;
-            span {
-              font-family: Poppins;
-              font-size: 14px;
-              font-weight: 400;
-              line-height: 21px;
-            }
-          }
-        }
-      }
-      .youtube {
-        display: flex;
-        justify-content: space-between;
-        .youtube_box {
-          iframe {
-            border-radius: 10px;
-            background: #1b295925;
-          }
-        }
-        .youtube_box2 {
-          display: flex;
-          flex-direction: column;
-          gap: 20px;
-          .tabButton {
-            background-color: transparent;
-            border: none;
-            cursor: pointer;
-            padding: 10px;
-          }
-  
-          .activeButton {
-            background: #1b295966;
-            color: white;
-          }
-          button {
-            display: flex;
-            text-align: start;
-            align-items: center;
-            padding: 10px;
-            background: #3c488a;
-            border-radius: 5px;
-            gap: 10px;
-            span {
-              font-family: Montserrat;
-              font-size: 16px;
-              font-weight: 400;
-              line-height: 19.5px;
-              color: #a5a5a5;
-            }
-          }
-          .buttons {
-            display: flex;
-            gap: 30px;
-            .prew {
-              padding: 10px 30px;
-              font-family: Montserrat;
-              font-size: 15px;
-              font-weight: 600;
-              line-height: 18.29px;
-              border-radius: 10px;
-              background: #ffffff;
-              color: #000;
-              text-align: center;
-            }
-            .next {
-              padding: 10px 30px;
-              font-family: Montserrat;
-              font-size: 15px;
-              font-weight: 600;
-              line-height: 18.29px;
-              border-radius: 10px;
-              background: #ffffff;
-              color: #000;
-              text-align: center;
-            }
-          }
-        }
-      }
-      .text_end {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-  
-        h3 {
-          width: 615px;
-          font-size: 20px;
-          font-family: Montserrat;
-          font-weight: 600;
-          line-height: 24.38px;
-        }
-        li {
-          font-family: Montserrat;
-          font-size: 20px;
-          font-weight: 400;
-          line-height: 24.38px;
-        }
-      }
-      .text_end2 {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-  
-        h3 {
-          width: 615px;
-          font-size: 20px;
-          font-family: Montserrat;
-          font-weight: 600;
-          line-height: 24.38px;
-        }
-        li {
-          // width: 181px;
-          font-family: Montserrat;
-          font-size: 20px;
-          font-weight: 400;
-          line-height: 24.38px;
         }
       }
     }
+    .youtube {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      @media (max-width: 700px) {
+        align-items: center;
+        justify-content: center;
+      }
+      .youtube_box {
+        iframe {
+          border-radius: 10px;
+          background: #1b295925;
+        }
+        @media (max-width: 700px) {
+          iframe {
+            width: 550px;
+          }
+        }
+        @media (max-width: 650px) {
+          iframe {
+            width: 500px;
+          }
+        }
+        @media (max-width: 520px) {
+          iframe {
+            width: 450px;
+          }
+        }
+        @media (max-width: 461px) {
+          iframe {
+            width: 100%;
+          }
+        }
+      }
+      .youtube_box2 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .tabButton {
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+          padding: 10px;
+        }
+
+        .activeButton {
+          background: #1b295966;
+          color: white;
+        }
+        button {
+          display: flex;
+          text-align: start;
+          align-items: center;
+          padding: 10px;
+          background: #3c488a;
+          border-radius: 5px;
+          gap: 10px;
+          span {
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19.5px;
+            color: #a5a5a5;
+          }
+        }
+        .buttons {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          gap: 30px;
+          .prew {
+            padding: 10px 30px;
+            font-family: Montserrat;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 18.29px;
+            border-radius: 10px;
+            background: #ffffff;
+            color: #000;
+            text-align: center;
+          }
+          .next {
+            padding: 10px 30px;
+            font-family: Montserrat;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 18.29px;
+            border-radius: 10px;
+            background: #ffffff;
+            color: #000;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .text_end {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      h3 {
+        max-width: 615px;
+        width: 100%;
+        font-size: clamp(10px, 4vw, 20px);
+        font-family: Montserrat;
+        font-weight: 600;
+        line-height: 24.38px;
+      }
+      li {
+        font-family: Montserrat;
+        font-size: clamp(10px, 4vw, 20px);
+        font-weight: 400;
+        line-height: 24.38px;
+      }
+    }
+    .text_end2 {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      h3 {
+        max-width: 615px;
+        width: 100%;
+        font-size: clamp(10px, 4vw, 20px);
+        font-family: Montserrat;
+        font-weight: 600;
+        line-height: 24.38px;
+      }
+      li {
+        // width: 181px;
+        font-family: Montserrat;
+        font-size: clamp(10px, 4vw, 20px);
+        font-weight: 400;
+        line-height: 24.38px;
+      }
+    }
   }
-  
+}

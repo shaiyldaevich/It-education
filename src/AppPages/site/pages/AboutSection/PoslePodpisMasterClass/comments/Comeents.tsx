@@ -1,6 +1,7 @@
 import React from "react";
 import scss from "./Coments.module.scss";
 import { useLanguageStore } from "@/stores/useLanguageStore";
+import Image from "next/image";
 const commentsList = [
   {
     id: 1,
@@ -29,7 +30,7 @@ const commentsList = [
     userProfile: "randomImg",
     id: 4,
     name: "Осмонова Нурай",
-    date: "/  24.10.2021",
+    date: "/ 24.10.2021",
     comment:
       "Мой первый день в мире программирования ✨ Первый ролик 😊 Вы просто гениально объясняете, продолжаю смотреть 😉  Спасибо! ",
   },
@@ -50,11 +51,17 @@ const Comeents = () => {
               <div key={comment.id} className={scss.comment}>
                 <div className={scss.commenLeft}>
                   <div className={scss.userProfile}>
-                    <img src={comment.userProfile} alt="" />
+                    <img
+                      src={comment.userProfile}
+                      alt=""
+                      // width={50}
+                      // height={50}
+                    />
                   </div>
                   <div className={scss.commentInfo}>
                     <h3>
                       {comment.name}
+                      {""}
                       <span>{comment.date}</span>
                     </h3>
                     <p>{comment.comment}</p>
