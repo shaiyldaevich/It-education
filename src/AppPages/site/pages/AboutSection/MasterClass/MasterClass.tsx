@@ -2,7 +2,6 @@
 import React from "react";
 import scss from "./MasterClass.module.scss";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
 import { useLanguageStore } from "@/stores/useLanguageStore";
 
 const Master = [

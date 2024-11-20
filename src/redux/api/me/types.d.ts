@@ -1,4 +1,4 @@
-namespace Me {
-  type GetMeResponse = {}[];
-  type GetMeRequest = void;
-}
+// namespace Me {
+//   type GetMeResponse = {}[];
+//   type GetMeRequest = void;
+// }

@@ -1,7 +1,6 @@
 import React from "react";
 import scss from "./Coments.module.scss";
 import { useLanguageStore } from "@/stores/useLanguageStore";
-import Image from "next/image";
 const commentsList = [
   {
     id: 1,
