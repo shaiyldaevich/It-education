@@ -1,0 +1,31 @@
+.card {
+  box-sizing: border-box;
+  border: 1px solid rgb(2, 114, 206);
+  border-radius: 10px;
+  backdrop-filter: blur(14px);
+  background: rgba(10, 17, 40, 0.1);
+  width: 82%;
+  height: 35%;
+  margin-bottom: 190px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+  .text2 {
+    button {
+      width: 180px;
+      height: 40px;
+      border-radius: 10px;
+      background: rgb(2, 114, 206);
+      color: rgb(255, 255, 255);
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0%;
+      border: none;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+.mainBlog {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+
+  .mainTarif {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    .subscription {
+      margin-top: 110px;
+      .textInfo {
+        display: flex;
+        gap: 60px;
+        .text1 {
+          p {
+            margin: 30px;
+          }
+        }
+        .text2 {
+          p {
+            margin: 30px 0;
+          }
+        }
+      }
+    }
+
+    .tarifBlock {
+      .tarifCards {
+        margin-bottom: 40px;
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        .Card {
+          width: 350px;
+          height: 540px;
+          padding: 30px 40px;
+          border-radius: 10px;
+          background: rgb(255, 255, 255);
+          h2 {
+            color: black;
+          }
+          p {
+            color: black;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+          }
+          .btn1 {
+            width: 112px;
+            height: 35px;
+            box-sizing: border-box;
+            border: 1px solid rgb(17, 65, 111);
+            border-radius: 3.27px;
+            backdrop-filter: blur(9.82px);
+            color: rgb(0, 0, 0);
+            font-family: Montserrat;
+            font-weight: 500;
+            line-height: 15px;
+            letter-spacing: 0%;
+            background: rgba(0, 0, 0, 0);
+            margin-bottom: 20px;
+          }
+          .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            button {
+              width: 178px;
+              height: 40px;
+              border-radius: 3.27px;
+              backdrop-filter: blur(9.82px);
+              background: linear-gradient(
+                133.19deg,
+                rgb(4, 60, 111) 2.313%,
+                rgb(21, 69, 116) 99.834%
+              );
+              color: rgb(255, 255, 255);
+              font-family: Montserrat;
+              font-size: 14px;
+              font-weight: 500;
+              line-height: 17px;
+              letter-spacing: 0%;
+              border: none;
+              margin-top: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

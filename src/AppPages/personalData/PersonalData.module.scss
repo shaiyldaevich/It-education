@@ -1,0 +1,176 @@
+.mainBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+
+  .mainPersonalDate {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .mainInputs {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    .inputOne {
+      .name {
+        p {
+          color: gray;
+        }
+        input {
+          width: 314px;
+          height: 44px;
+          padding: 10px;
+          border-radius: 10px;
+          background: rgba(27, 41, 89, 0.4);
+          border: none;
+          color: white;
+        }
+      }
+      .phone {
+        p {
+          color: gray;
+        }
+        input {
+          width: 314px;
+          height: 44px;
+          padding: 10px;
+          padding-left: 45px;
+          border-radius: 10px;
+          background: rgba(27, 41, 89, 0.4);
+          border: none;
+          color: white;
+        }
+      }
+      .email {
+        p {
+          color: gray;
+        }
+        input {
+          width: 314px;
+          height: 44px;
+          padding: 10px;
+          border-radius: 10px;
+          background: rgba(27, 41, 89, 0.4);
+          border: none;
+          color: white;
+        }
+      }
+
+      .pol {
+        p {
+          color: gray;
+        }
+
+        .polInput {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          .women {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 150px;
+            height: 44px;
+            padding: 10px;
+            border-radius: 10px;
+            background: rgba(27, 41, 89, 0.4);
+            border: none;
+            color: white;
+            input {
+              width: 20px;
+              height: 20px;
+              border-radius: 10px;
+              background: rgba(27, 41, 89, 0);
+            }
+          }
+          .men {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 150px;
+            height: 44px;
+            padding: 10px;
+            border-radius: 10px;
+            background: rgba(27, 41, 89, 0.4);
+            border: none;
+            color: white;
+            input {
+              width: 20px;
+              height: 20px;
+              border-radius: 10px;
+              background: rgba(27, 41, 89, 0);
+            }
+          }
+        }
+      }
+    }
+
+    .inputTwo {
+      .date {
+        p {
+          color: gray;
+        }
+        .selected {
+          display: flex;
+          gap: 10px;
+          select {
+            width: 100px;
+            height: 44px;
+            padding: 10px;
+            border-radius: 10px;
+            background: rgba(27, 41, 89, 0.4);
+            border: none;
+            color: white;
+          }
+        }
+      }
+
+      .country {
+        p {
+            color: gray;
+          }
+          select {
+            width: 314px;
+            height: 44px;
+            padding: 10px;
+            border-radius: 10px;
+            background: rgba(27, 41, 89, 0.4);
+            border: none;
+            color: white;
+          }
+      }
+      .city {
+        p {
+            color: gray;
+          }
+          select {
+            width: 314px;
+            height: 44px;
+            padding: 10px;
+            border-radius: 10px;
+            background: rgba(27, 41, 89, 0.4);
+            border: none;
+            color: white;
+          }
+      }
+      .status {
+        p {
+            color: gray;
+          }
+          input {
+            width: 314px;
+            height: 44px;
+            padding: 10px;
+            border-radius: 10px;
+            background: rgba(27, 41, 89, 0.4);
+            border: none;
+            color: white;
+          }
+      }
+    }
+  }
+}

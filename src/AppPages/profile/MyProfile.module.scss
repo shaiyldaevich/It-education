@@ -1,0 +1,136 @@
+.mainProfile {
+    margin-top: 150px;
+    margin-bottom: 100px;
+    .profileCard {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 354px;
+      height: 100%;
+      border-radius: 10px;
+      background: rgb(255, 255, 255);
+      padding: 20px;
+      .profileImg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        img {
+          width: 92px;
+          height: 92px;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+        }
+        button {
+          width: 170px;
+          height: 39px;
+          border-radius: 10px;
+          background: rgb(2, 114, 206);
+          border: none;
+          color: white;
+        }
+      }
+      .profileText {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        .person {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          margin-top: 20px;
+          cursor: pointer;
+          p {
+            color: black;
+            cursor: pointer;
+          }
+        }
+        .person:hover {
+          p {
+            color: blue;
+          }
+        }
+        .wallet {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          p {
+            color: black;
+            cursor: pointer;
+          }
+        }
+        .wallet:hover {
+          p {
+            color: blue;
+          }
+        }
+        .card {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          p {
+            color: black;
+            cursor: pointer;
+          }
+        }
+  
+        .card:hover {
+          p {
+            color: blue;
+          }
+        }
+        .comment {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          p {
+            color: black;
+            cursor: pointer;
+          }
+        }
+        .comment:hover {
+          p {
+            color: blue;
+          }
+        }
+        .basket {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          p {
+            color: black;
+            cursor: pointer;
+          }
+        }
+        .basket:hover {
+          p {
+            color: blue;
+          }
+        }
+        .logout {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          p {
+            color: black;
+            cursor: pointer;
+          }
+        }
+        .logout:hover {
+          p {
+            color: blue;
+          }
+        }
+        .hr {
+          width: 100%;
+          color: grey;
+        }
+      }
+    }
+  }
+  

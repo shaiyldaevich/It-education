@@ -1,0 +1,53 @@
+.mainBlog {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 50px;
+  
+  .mainCard {
+    margin-top: 110px;
+    margin-bottom: 90px;
+    .mainVisa {
+      display: flex;
+      align-items: center;
+     flex-wrap: wrap;
+     width: 100%;
+      gap: 30px;
+    
+      .cardVisa {
+        position: relative;
+        width: 355px;
+        height: 100%;
+        box-sizing: border-box;
+        border: 1px solid rgb(2, 114, 206);
+        border-radius: 10px;
+        backdrop-filter: blur(14px);
+        background: rgba(10, 17, 40, 0.1);
+        display: flex;
+        flex-direction: column;
+        padding: 0px 20px;
+
+        .cardImage {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+        }
+        .cardDate {
+          display: flex;
+          flex-direction: column;
+          p {
+            margin-top: -25px;
+            margin-bottom: 20px;
+          }
+          img {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            margin-right: 10px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
